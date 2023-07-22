@@ -10,3 +10,11 @@ npm run dev
 npm run lint
 npm run fmt
 ```
+
+# Environment Setup
+
+Create a file `.env` with the following contents
+
+```
+VITE_OPENAI_API_KEY=<INSERT-API-KEY-HERE>
+```

@@ -10,6 +10,29 @@ import {
   Typography,
 } from "@mui/material";
 
+import { Configuration, OpenAIApi, ChatCompletionRequestMessage } from "openai";
+
+const config = new Configuration({ apiKey: import.meta.env.VITE_OPENAI_API_KEY });
+const api = new OpenAIApi(config);
+
+function messagesToConversation(messages: Message[]): ChatCompletionRequestMessage[] {
+  return messages.map((message) => ({
+    role: message.author === "user" ? "user" : "system",
+    content: message.body,
+  }));
+}
+
+async function sendMessage(messages: Message[]): Promise<string> {
+  const conversation = messagesToConversation(messages);
+  const completion = await api.createChatCompletion({
+    model: "gpt-3.5-turbo",
+    messages: conversation,
+    max_tokens: 60
+  });
+
+  return completion.data.choices[0].message?.content as string;
+}
+
 interface Message {
   id: number;
   author: "user" | "assistant";
@@ -64,20 +87,22 @@ export default function Chat() {
       author: "assistant",
       body: "Hello, I hear you are looking for a home in Edmonton! I will be your virtual realtor. What type of living space are you looking for today?",
     },
-    {
-      id: 1,
-      author: "user",
-      body: "Hey, I am moving to Edmonton early next year. I am looking to purchase a home for my family of 4.",
-    },
   ]);
 
-  const handleSend = useCallback(() => {
-    setMessages((messages) => [
+  const handleSend = useCallback(async () => {
+    const newMessages: Message[] = [
       ...messages,
       { id: messages.length, author: "user", body: message },
-    ]);
+    ];
+    setMessages(newMessages);
     setMessage("");
-  }, [message]);
+
+    const response = await sendMessage(newMessages);
+    setMessages([
+      ...newMessages,
+      { id: newMessages.length, author: "assistant", body: response },
+    ]);
+  }, [message, messages]);
 
   return (
     <Card sx={{ minWidth: 400, flex: 1, mr: 1, boxShadow: "none" }}>
