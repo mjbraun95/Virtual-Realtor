@@ -24,7 +24,7 @@ class Listing:
         # self.remarks = listing['PublicRemarks']
         self.bathrooms = listing['Building'].get('BathroomTotal', '')
         self.bedrooms = listing['Building']['Bedrooms']
-        self.size_interior = listing['Building']['SizeInterior']
+        self.size_interior = listing['Building'].get('SizeInterior', '')
         self.building_type = listing['Building']['Type']
         self.price = listing['Property']['PriceUnformattedValue']
         self.property_type = listing['Property']['Type']
