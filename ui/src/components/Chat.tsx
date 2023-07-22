@@ -73,7 +73,7 @@ export default function Chat() {
   }, [message]);
 
   return (
-    <Card sx={{ w: "30vw", maxWidth: 500 }}>
+    <Card sx={{ minWidth: 400, flex: 1, mr: 1 }}>
       <Stack direction="column" height="100%">
         <Stack
           direction="column"
