@@ -20,7 +20,8 @@ print("Loaded %d listings" % len(listings))
 class Listing:
     def __init__(self, listing):
         self.uuid = uuid.uuid4()
-        self.r_id = listing['Id']
+        # self.r_id = listing['Id']
+        # self.remarks = listing['PublicRemarks']
         self.bathrooms = listing['Building']['BathroomTotal']
         self.bedrooms = listing['Building']['Bedrooms']
         self.size_interior = listing['Building']['SizeInterior']
@@ -31,8 +32,8 @@ class Listing:
         self.latitude = listing['Property']['Address']['Latitude']
         self.longitude = listing['Property']['Address']['AddressText']
         self.photo = listing.get('Photo', '')
-        self.ownership_type = listing['Property']['OwnershipType']
-        self.ammenities_nearby = listing['Property']['AmmenitiesNearBy']
+        self.ownership_type = listing['Property'].get('OwnershipType', '')
+        self.ammenities_nearby = listing['Property'].get('AmmenitiesNearBy', '')
         self.url = listing['RelativeDetailsURL']
         self.land_size = listing['Land'].get('SizeTotal', 0)
         self.stories = listing['Building']['StoriesTotal']
@@ -42,9 +43,9 @@ class Listing:
         self.province_name = listing['ProvinceName']
 
     def generate_sql_insert(self):
-        return "INSERT INTO listings (uuid, r_id, bathrooms, bedrooms, size_interior, building_type, price, property_type, full_address, latitude, longitude, photo, ownership_type, ammenities_nearby, url, land_size, stories, parking_type, ammenities, postal_code, province_name) VALUES ('{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}');\n".format(
+        return "INSERT INTO listings (uuid, bathrooms, bedrooms, size_interior, building_type, price, property_type, full_address, latitude, longitude, photo, ownership_type, ammenities_nearby, url, land_size, stories, parking_type, ammenities, postal_code, province_name) VALUES ('{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}');\n".format(
             self.uuid,
-            self.r_id,
+            # self.r_id,
             self.bathrooms,
             self.bedrooms,
             self.size_interior,
