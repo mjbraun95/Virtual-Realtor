@@ -36,14 +36,21 @@ function Message({ message }: MessageProps) {
       <Box
         sx={{
           ...colors,
-          display: "flex",
           ...position,
           p: 2,
           borderRadius: 2,
           maxWidth: "80%",
         }}
       >
-        <Typography>{message.body}</Typography>
+        {message.body
+          .split("\n")
+          .map((part, i) =>
+            part === "" ? (
+              <br key={i} />
+            ) : (
+              <Typography key={i}>{part}</Typography>
+            ),
+          )}
       </Box>
     </Box>
   );
