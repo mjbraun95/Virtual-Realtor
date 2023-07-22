@@ -1,0 +1,2204 @@
+[
+  {
+    "Id": "25863708",
+    "MlsNumber": "E4351151",
+    "PublicRemarks": "LOCATION LOCATION.... Walking distance to Grant MacEwan, Norquest College, Rogers Place, shopping, the river valley and the LRT. This condo has everything you will need....NEW VINYL PLANK FLOORING throughout the unit, INSUITE LAUNDRY, UNDERGROUND HEATED parking, NEW WINDOWS and PATIO DOORS,  EXERCISE room, ROOF TOP patio, steps to numerous restaurants and best of all a QUIET SECURED CONCRETE BUILDING... This unit boasts 2 bedrooms, 1.5 baths, lots of natural light, open concept, dining area, large windows, large storage space, new paint, bathroom vanity, NEW washer and dryer and painted cupboards and hardware. Enjoy the west facing patio to soak up the sun and relax after a long day! Great investment property or holding property if you have kids that will be going to college. Stop paying rent and start adding to your portfolio!! (30214859)",
+    "Building": {
+      "BathroomTotal": "2",
+      "Bedrooms": "2",
+      "SizeInterior": "84.77 m2",
+      "StoriesTotal": "",
+      "Type": "Apartment",
+      "Ammenities": "Vinyl Windows"
+    },
+    "Individual": [
+      {
+        "IndividualID": 1625198,
+        "Name": "Shelley D. Dolen",
+        "Organization": {
+          "OrganizationID": 67029,
+          "Name": "RE/MAX Real Estate",
+          "Logo": "https://cdn.realtor.ca/organization/en-CA/TS638256118210000000/lowres/1004789.jpg",
+          "Address": {
+            "AddressText": "201-5306 50 St|Leduc, Alberta T9E6Z6",
+            "PermitShowAddress": true,
+            "DisseminationArea": null
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "986-2900",
+              "AreaCode": "780",
+              "PhoneTypeId": "1"
+            },
+            {
+              "PhoneType": "Fax",
+              "PhoneNumber": "986-5636",
+              "AreaCode": "780",
+              "PhoneTypeId": "4"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "509231052"
+            }
+          ],
+          "OrganizationType": "Firm",
+          "HasEmail": true,
+          "PermitFreetextEmail": true,
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/office/firm/67029/remax-real-estate-201-5306-50-st-leduc-alberta-t9e6z6",
+          "PhotoLastupdate": "2023-07-22 8:37:01 AM"
+        },
+        "Phones": [
+          {
+            "PhoneType": "Telephone",
+            "PhoneNumber": "983-3575",
+            "AreaCode": "780",
+            "PhoneTypeId": "1"
+          },
+          {
+            "PhoneType": "Fax",
+            "PhoneNumber": "986-5636",
+            "AreaCode": "780",
+            "PhoneTypeId": "4"
+          }
+        ],
+        "Websites": [
+          {
+            "Website": "http://www.shelleydolen.com/",
+            "WebsiteTypeId": "1"
+          }
+        ],
+        "Emails": [
+          {
+            "ContactId": "509128346"
+          }
+        ],
+        "Position": "Associate",
+        "PermitFreetextEmail": true,
+        "FirstName": "Shelley",
+        "LastName": "Dolen",
+        "CorporationDisplayTypeId": "0",
+        "PermitShowListingLink": true,
+        "RelativeDetailsURL": "/agent/1625198/shelley-dolen-201-5306-50-st-leduc-alberta-t9e6z6",
+        "RankMyAgentKey": "",
+        "RealSatisfiedKey": "",
+        "TestimonialTreeKey": ""
+      }
+    ],
+    "Property": {
+      "Price": "$155,000",
+      "Type": "Single Family",
+      "Address": {
+        "AddressText": "#406 10125 109 ST NW|Edmonton, Alberta T5J3P1",
+        "Longitude": "-113.507863871164",
+        "Latitude": "53.54213622624",
+        "PermitShowAddress": true,
+        "DisseminationArea": null
+      },
+      "Photo": [
+        {
+          "SequenceId": "1",
+          "HighResPath": "https://cdn.realtor.ca/listings/TS638256118213730000/reb10/highres/1/E4351151_1.jpg",
+          "MedResPath": "https://cdn.realtor.ca/listings/TS638256118213730000/reb10/medres/1/E4351151_1.jpg",
+          "LowResPath": "https://cdn.realtor.ca/listings/TS638256118213730000/reb10/lowres/1/E4351151_1.jpg",
+          "LastUpdated": "2023-07-22 8:37:01 AM",
+          "TypeId": "0"
+        }
+      ],
+      "Parking": [
+        {
+          "Name": "Underground"
+        }
+      ],
+      "TypeId": "300",
+      "OwnershipType": "Condominium/Strata",
+      "AmmenitiesNearBy": "Public Transit, Schools, Shopping",
+      "OwnershipTypeGroupIds": [
+        2
+      ],
+      "ParkingType": "Underground",
+      "PriceUnformattedValue": "155000"
+    },
+    "Business": {},
+    "Land": {},
+    "AlternateURL": {
+      "VideoLink": "https://rae.paragonrels.com/ParagonLS/Reports/ListingSlideshow.mvc/Slideshow/RAE/85463706-297a-4d01-891d-27d3eddb7af8"
+    },
+    "PostalCode": "T5J3P1",
+    "HistoricalDataIsCleared": false,
+    "ProvinceName": "Alberta",
+    "RelativeDetailsURL": "/real-estate/25863708/406-10125-109-st-nw-edmonton-downtownedmo",
+    "StatusId": "1",
+    "PhotoChangeDateUTC": "2023-07-22 12:37:01 PM",
+    "HasNewImageUpdate": true,
+    "Distance": "",
+    "RelativeURLEn": "/real-estate/25863708/406-10125-109-st-nw-edmonton-downtownedmo",
+    "RelativeURLFr": "/immobilier/25863708/406-10125-109-st-nw-edmonton",
+    "Media": [
+      {
+        "MediaCategoryId": "2",
+        "MediaCategoryURL": "https://rae.paragonrels.com/ParagonLS/Reports/ListingSlideshow.mvc/Slideshow/RAE/85463706-297a-4d01-891d-27d3eddb7af8",
+        "Description": "VideoTourWebsite",
+        "Order": 5,
+        "VideoType": "Other"
+      }
+    ],
+    "InsertedDateUTC": "638256262213670000",
+    "TimeOnRealtor": "5 hours ago",
+    "Tags": [
+      {
+        "Label": "5 hours ago",
+        "HTMLColorCode": "#23A1C0",
+        "ListingTagTypeID": "1"
+      }
+    ]
+  },
+  {
+    "Id": "25863649",
+    "MlsNumber": "E4351149",
+    "PublicRemarks": "Welcome to this beautiful home (3900 sqft total living space) w/ 2 bedroom LEGAL BASEMENT located in the desirable community LAUREL. This spacious property offers loads of upgrades & an opportunity with 6 bedrooms /5 Full baths, making it perfect for multi families or generating rental income. As you step inside, you will notice the well-designed layout. The main floor features 10 ft ceiling, tile flooring, a bright and airy open to below living area, and a convenient main floor bedroom w/ full bath, stylish chef kitchen & spacious spice Kitchen & dining. Upstairs, you will find 10 feet ceiling, vinyl flooring, 3 generous bedrooms plus prayer and bonus room, 3 full baths including a very spacious primary suite with a huge walk-in closet and a 5-piece ensuite bath Basement is legal with 9ft ceiling, two beds, full bath, separate kitchen, laundry & entrance. Upgrades include electronic toilet seats, rain showers, oversized garage, high-end fixtures, wide deck, acrylic stucco, 8 ft doors, main double door. (30214798)",
+    "Building": {
+      "BathroomTotal": "5",
+      "Bedrooms": "6",
+      "SizeInterior": "265.07 m2",
+      "StoriesTotal": "2",
+      "Type": "House",
+      "Ammenities": "Ceiling - 10ft"
+    },
+    "Individual": [
+      {
+        "IndividualID": 2133905,
+        "Name": "Kawaldeep Gill",
+        "Organization": {
+          "OrganizationID": 67122,
+          "Name": "MaxWell Polaris",
+          "Logo": "https://cdn.realtor.ca/organization/en-CA/TS638256082300000000/lowres/1004964.jpg",
+          "Address": {
+            "AddressText": "4107 99 St NW|Edmonton, Alberta T6E3N4",
+            "PermitShowAddress": true,
+            "DisseminationArea": null
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "450-6300",
+              "AreaCode": "780",
+              "PhoneTypeId": "1"
+            },
+            {
+              "PhoneType": "Fax",
+              "PhoneNumber": "450-6670",
+              "AreaCode": "780",
+              "PhoneTypeId": "4"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "511516316"
+            }
+          ],
+          "OrganizationType": "Firm",
+          "HasEmail": true,
+          "PermitFreetextEmail": true,
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/office/firm/67122/maxwell-polaris-4107-99-st-nw-edmonton-alberta-t6e3n4",
+          "PhotoLastupdate": "2023-07-22 7:37:10 AM"
+        },
+        "Phones": [
+          {
+            "PhoneType": "Telephone",
+            "PhoneNumber": "264-6566",
+            "AreaCode": "780",
+            "PhoneTypeId": "1"
+          },
+          {
+            "PhoneType": "Fax",
+            "PhoneNumber": "450-6670",
+            "AreaCode": "780",
+            "PhoneTypeId": "4"
+          }
+        ],
+        "Emails": [
+          {
+            "ContactId": "509122022"
+          }
+        ],
+        "Position": "Associate",
+        "PermitFreetextEmail": true,
+        "FirstName": "Kawaldeep",
+        "LastName": "Gill",
+        "CorporationDisplayTypeId": "0",
+        "PermitShowListingLink": true,
+        "RelativeDetailsURL": "/agent/2133905/kawaldeep-gill-4107-99-st-nw-edmonton-alberta-t6e3n4",
+        "RankMyAgentKey": "79992",
+        "RealSatisfiedKey": "",
+        "TestimonialTreeKey": ""
+      }
+    ],
+    "Property": {
+      "Price": "$895,000",
+      "Type": "Single Family",
+      "Address": {
+        "AddressText": "1740 18 ST NW|Edmonton, Alberta T6T2N2",
+        "Longitude": "-113.370457084656",
+        "Latitude": "53.4477344415246",
+        "PermitShowAddress": true,
+        "DisseminationArea": null
+      },
+      "Photo": [
+        {
+          "SequenceId": "1",
+          "HighResPath": "https://cdn.realtor.ca/listings/TS638256082305370000/reb10/highres/9/E4351149_1.jpg",
+          "MedResPath": "https://cdn.realtor.ca/listings/TS638256082305370000/reb10/medres/9/E4351149_1.jpg",
+          "LowResPath": "https://cdn.realtor.ca/listings/TS638256082305370000/reb10/lowres/9/E4351149_1.jpg",
+          "LastUpdated": "2023-07-22 7:37:10 AM",
+          "TypeId": "0"
+        }
+      ],
+      "Parking": [
+        {
+          "Name": "Attached Garage"
+        }
+      ],
+      "TypeId": "300",
+      "OwnershipType": "Freehold",
+      "AmmenitiesNearBy": "Playground, Schools, Shopping",
+      "OwnershipTypeGroupIds": [
+        1
+      ],
+      "ParkingType": "Attached Garage",
+      "PriceUnformattedValue": "895000"
+    },
+    "Business": {},
+    "Land": {},
+    "PostalCode": "T6T2N2",
+    "HistoricalDataIsCleared": false,
+    "ProvinceName": "Alberta",
+    "RelativeDetailsURL": "/real-estate/25863649/1740-18-st-nw-edmonton-laurel",
+    "StatusId": "1",
+    "PhotoChangeDateUTC": "2023-07-22 11:37:10 AM",
+    "HasNewImageUpdate": true,
+    "Distance": "",
+    "RelativeURLEn": "/real-estate/25863649/1740-18-st-nw-edmonton-laurel",
+    "RelativeURLFr": "/immobilier/25863649/1740-18-st-nw-edmonton",
+    "Media": [],
+    "InsertedDateUTC": "638256226305300000",
+    "TimeOnRealtor": "6 hours ago",
+    "Tags": [
+      {
+        "Label": "6 hours ago",
+        "HTMLColorCode": "#23A1C0",
+        "ListingTagTypeID": "1"
+      }
+    ]
+  },
+  {
+    "Id": "25863645",
+    "MlsNumber": "E4351145",
+    "PublicRemarks": "Luxury living in Allard - Your search ends here! Gorgeous home with all the high end upgrades you could imagine. Fischer & Paykel appliances, 10 foot ceilings, 8 foot doors, and premium exterior upgrades, just to list a few. You will be wow'd as soon as you enter this bright and airy home which is flooded with natural light all day long. Pride of ownership shows with high end lighting and finishings. Shangri La blinds throughout with blackout blinds in the bedrooms. This home is perfect for a family looking for a cozy yet spacious home. The main floor has a full bedroom and bathroom along with an office/play room. Upstairs you will find 4 bedrooms with a central bonus room. 2 bedrooms share a jack n jill washroom. The basement is unfinished however all rough-ins are completed along with a second furnace for future legal suite development. Wrapping this home up is a triple car over sized garage and central A/C. (30214790)",
+    "Building": {
+      "BathroomTotal": "4",
+      "Bedrooms": "5",
+      "SizeInterior": "342.89 m2",
+      "StoriesTotal": "2",
+      "Type": "House",
+      "Ammenities": "Ceiling - 10ft, Ceiling - 9ft, Vinyl Windows"
+    },
+    "Individual": [
+      {
+        "IndividualID": 2087099,
+        "Name": "Jessie S. Sahota",
+        "Organization": {
+          "OrganizationID": 67004,
+          "Name": "Liv Real Estate",
+          "Logo": "https://cdn.realtor.ca/organization/en-CA/TS638256082290000000/lowres/67004.jpg",
+          "Address": {
+            "AddressText": "18831 111 Ave NW|Edmonton, Alberta T5S2X4",
+            "PermitShowAddress": true,
+            "DisseminationArea": null
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "486-8655",
+              "AreaCode": "780",
+              "PhoneTypeId": "1"
+            },
+            {
+              "PhoneType": "Fax",
+              "PhoneNumber": "486-8654",
+              "AreaCode": "780",
+              "PhoneTypeId": "4"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "508940093"
+            }
+          ],
+          "OrganizationType": "Firm",
+          "HasEmail": true,
+          "PermitFreetextEmail": true,
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/office/firm/67004/liv-real-estate-18831-111-ave-nw-edmonton-alberta-t5s2x4",
+          "PhotoLastupdate": "2023-07-22 7:37:09 AM"
+        },
+        "Phones": [
+          {
+            "PhoneType": "Telephone",
+            "PhoneNumber": "242-6941",
+            "AreaCode": "780",
+            "PhoneTypeId": "1"
+          },
+          {
+            "PhoneType": "Fax",
+            "PhoneNumber": "486-8654",
+            "AreaCode": "780",
+            "PhoneTypeId": "4"
+          }
+        ],
+        "Websites": [
+          {
+            "Website": "https://www.sahotarealty.com/",
+            "WebsiteTypeId": "1"
+          },
+          {
+            "Website": "https://www.facebook.com/jessie.s.sahota",
+            "WebsiteTypeId": "2"
+          },
+          {
+            "Website": "https://www.linkedin.com/in/jessiessahota/",
+            "WebsiteTypeId": "3"
+          }
+        ],
+        "Emails": [
+          {
+            "ContactId": "511432339"
+          }
+        ],
+        "Photo": "https://cdn.realtor.ca/individual/TS637160969400000000/lowres/1360443.jpg",
+        "Position": "Associate",
+        "PermitFreetextEmail": true,
+        "FirstName": "Jessie",
+        "LastName": "Sahota",
+        "CorporationDisplayTypeId": "0",
+        "PermitShowListingLink": true,
+        "RelativeDetailsURL": "/agent/2087099/jessie-sahota-18831-111-ave-nw-edmonton-alberta-t5s2x4",
+        "AgentPhotoLastUpdated": "2020-01-31 19:49:00",
+        "PhotoHighRes": "https://cdn.realtor.ca/individual/TS637160969400000000/highres/1360443.jpg",
+        "RankMyAgentKey": "",
+        "RealSatisfiedKey": "Jaskamal-Sahota",
+        "TestimonialTreeKey": ""
+      }
+    ],
+    "Property": {
+      "Price": "$1,249,999",
+      "Type": "Single Family",
+      "Address": {
+        "AddressText": "2423 ASHCRAFT CR SW|Edmonton, Alberta T6W2M9",
+        "Longitude": "-113.520251102447",
+        "Latitude": "53.4013115652186",
+        "PermitShowAddress": true,
+        "DisseminationArea": null
+      },
+      "Photo": [
+        {
+          "SequenceId": "1",
+          "HighResPath": "https://cdn.realtor.ca/listings/TS638256082295300000/reb10/highres/5/E4351145_1.jpg",
+          "MedResPath": "https://cdn.realtor.ca/listings/TS638256082295300000/reb10/medres/5/E4351145_1.jpg",
+          "LowResPath": "https://cdn.realtor.ca/listings/TS638256082295300000/reb10/lowres/5/E4351145_1.jpg",
+          "LastUpdated": "2023-07-22 7:37:09 AM",
+          "TypeId": "0"
+        }
+      ],
+      "Parking": [
+        {
+          "Name": "Attached Garage"
+        }
+      ],
+      "TypeId": "300",
+      "OwnershipType": "Freehold",
+      "AmmenitiesNearBy": "Playground, Public Transit, Schools, Shopping",
+      "OwnershipTypeGroupIds": [
+        1
+      ],
+      "ParkingType": "Attached Garage",
+      "PriceUnformattedValue": "1249999"
+    },
+    "Business": {},
+    "Land": {
+      "SizeTotal": "580.06 m2"
+    },
+    "AlternateURL": {
+      "VideoLink": "https://youriguide.com/2423_ashcraft_cres_sw_edmonton_ab/"
+    },
+    "PostalCode": "T6W2M9",
+    "HistoricalDataIsCleared": false,
+    "ProvinceName": "Alberta",
+    "RelativeDetailsURL": "/real-estate/25863645/2423-ashcraft-cr-sw-edmonton-allard",
+    "StatusId": "1",
+    "PhotoChangeDateUTC": "2023-07-22 11:37:09 AM",
+    "HasNewImageUpdate": true,
+    "Distance": "",
+    "RelativeURLEn": "/real-estate/25863645/2423-ashcraft-cr-sw-edmonton-allard",
+    "RelativeURLFr": "/immobilier/25863645/2423-ashcraft-cr-sw-edmonton",
+    "Media": [
+      {
+        "MediaCategoryId": "2",
+        "MediaCategoryURL": "https://youriguide.com/2423_ashcraft_cres_sw_edmonton_ab/",
+        "Description": "VideoTourWebsite",
+        "Order": 5,
+        "VideoType": "iGuide"
+      },
+      {
+        "MediaCategoryId": "8",
+        "MediaCategoryURL": "https://youriguide.com/2423_ashcraft_cres_sw_edmonton_ab//doc/floorplan_metric_en_u.pdf",
+        "Description": "FloorPlan"
+      },
+      {
+        "MediaCategoryId": "8",
+        "MediaCategoryURL": "https://youriguide.com/2423_ashcraft_cres_sw_edmonton_ab//doc/floorplan_imperial_en_u.pdf",
+        "Description": "FloorPlan"
+      }
+    ],
+    "InsertedDateUTC": "638256226295200000",
+    "TimeOnRealtor": "6 hours ago",
+    "Tags": [
+      {
+        "Label": "6 hours ago",
+        "HTMLColorCode": "#23A1C0",
+        "ListingTagTypeID": "1"
+      }
+    ]
+  },
+  {
+    "Id": "25863646",
+    "MlsNumber": "E4351146",
+    "PublicRemarks": "STUNNING TURN KEY PROPERTY! UNIT HAS BEEN REMODELLED FEAT. OVER $35,000 IN UPGRADES. Completely remodelled 2 storey townhome feat. 3 bedrooms & 2 baths. Upon entering you are greeted by modern grey laminate flooring which spans the entire main floor. Stunning chefs dream WHITE kitchen feat. an abundance of gorgeous cabinetry with black hardware, complimented by new QUARTZ countertops, tiled backsplash, along with a full set of 4 S.S appliances. Stairs & upper level feat brand new carpeting throughout. Upper level also feat 3 bedrooms & the main 4 piece SPA LIKE bath which has been redone with a new vanity, new mirror, new lighting, new toilet, new hardware, new acrylic tub feat. 12 x 24 ceramic tile with accents throughout. Other upgrades include: newer furnace & hot water tank, mirrored closets covered deck, new B.B, new trim, designer lighting, new plumbing fixtures, new doors, new closets, new Decora plug ins & light switches, freshly painted, & professionally managed. (30214792)",
+    "Building": {
+      "BathroomTotal": "2",
+      "Bedrooms": "3",
+      "SizeInterior": "90.76 m2",
+      "StoriesTotal": "2",
+      "Type": "Row / Townhouse",
+      "Ammenities": "Vinyl Windows"
+    },
+    "Individual": [
+      {
+        "IndividualID": 1477586,
+        "Name": "Moe Charara",
+        "Organization": {
+          "OrganizationID": 67147,
+          "Name": "Royal Lepage Arteam Realty",
+          "Logo": "https://cdn.realtor.ca/organization/en-CA/TS638256082290000000/lowres/67147.jpg",
+          "Address": {
+            "AddressText": "203-14101 West Block Dr|Edmonton, Alberta T5N1L5",
+            "PermitShowAddress": true,
+            "DisseminationArea": null
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "456-5656",
+              "AreaCode": "780",
+              "PhoneTypeId": "1"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "509244876"
+            }
+          ],
+          "OrganizationType": "Firm",
+          "HasEmail": true,
+          "PermitFreetextEmail": true,
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/office/firm/67147/royal-lepage-arteam-realty-203-14101-west-block-dr-edmonton-alberta-t5n1l5",
+          "PhotoLastupdate": "2023-07-22 7:37:09 AM"
+        },
+        "Phones": [
+          {
+            "PhoneType": "Telephone",
+            "PhoneNumber": "707-4848",
+            "AreaCode": "780",
+            "PhoneTypeId": "1"
+          }
+        ],
+        "Websites": [
+          {
+            "Website": "http://experiencerealtygroup.com/",
+            "WebsiteTypeId": "1"
+          }
+        ],
+        "Emails": [
+          {
+            "ContactId": "509116280"
+          }
+        ],
+        "Position": "Associate",
+        "PermitFreetextEmail": true,
+        "FirstName": "Moe",
+        "LastName": "Charara",
+        "CorporationDisplayTypeId": "0",
+        "PermitShowListingLink": true,
+        "RelativeDetailsURL": "/agent/1477586/moe-charara-203-14101-west-block-dr-edmonton-alberta-t5n1l5",
+        "RankMyAgentKey": "",
+        "RealSatisfiedKey": "",
+        "TestimonialTreeKey": ""
+      },
+      {
+        "IndividualID": 1646965,
+        "Name": "Ray Elwenni",
+        "Organization": {
+          "OrganizationID": 67147,
+          "Name": "Royal Lepage Arteam Realty",
+          "Logo": "https://cdn.realtor.ca/organization/en-CA/TS638256082290000000/lowres/67147.jpg",
+          "Address": {
+            "AddressText": "203-14101 West Block Dr|Edmonton, Alberta T5N1L5",
+            "PermitShowAddress": true,
+            "DisseminationArea": null
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "456-5656",
+              "AreaCode": "780",
+              "PhoneTypeId": "1"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "509244876"
+            }
+          ],
+          "OrganizationType": "Firm",
+          "HasEmail": true,
+          "PermitFreetextEmail": true,
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/office/firm/67147/royal-lepage-arteam-realty-203-14101-west-block-dr-edmonton-alberta-t5n1l5",
+          "PhotoLastupdate": "2023-07-22 7:37:09 AM"
+        },
+        "Phones": [
+          {
+            "PhoneType": "Telephone",
+            "PhoneNumber": "964-8881",
+            "AreaCode": "780",
+            "PhoneTypeId": "1"
+          }
+        ],
+        "Websites": [
+          {
+            "Website": "http://www.experiencerealtygroup.com/",
+            "WebsiteTypeId": "1"
+          }
+        ],
+        "Emails": [
+          {
+            "ContactId": "522540512"
+          }
+        ],
+        "Position": "Associate",
+        "PermitFreetextEmail": true,
+        "FirstName": "Ray",
+        "LastName": "Elwenni",
+        "CorporationDisplayTypeId": "0",
+        "PermitShowListingLink": true,
+        "RelativeDetailsURL": "/agent/1646965/ray-elwenni-203-14101-west-block-dr-edmonton-alberta-t5n1l5",
+        "RankMyAgentKey": "",
+        "RealSatisfiedKey": "",
+        "TestimonialTreeKey": ""
+      }
+    ],
+    "Property": {
+      "Price": "$219,900",
+      "Type": "Single Family",
+      "Address": {
+        "AddressText": "70 WILLOWDALE PLACE PL NW|Edmonton, Alberta T5T1Z4",
+        "Longitude": "-113.63249324418",
+        "Latitude": "53.5021726",
+        "PermitShowAddress": true,
+        "DisseminationArea": null
+      },
+      "Photo": [
+        {
+          "SequenceId": "1",
+          "HighResPath": "https://cdn.realtor.ca/listings/TS638256082298130000/reb10/highres/6/E4351146_1.jpg",
+          "MedResPath": "https://cdn.realtor.ca/listings/TS638256082298130000/reb10/medres/6/E4351146_1.jpg",
+          "LowResPath": "https://cdn.realtor.ca/listings/TS638256082298130000/reb10/lowres/6/E4351146_1.jpg",
+          "LastUpdated": "2023-07-22 7:37:09 AM",
+          "TypeId": "0"
+        }
+      ],
+      "Parking": [
+        {
+          "Name": "Stall"
+        }
+      ],
+      "TypeId": "300",
+      "OwnershipType": "Condominium/Strata",
+      "AmmenitiesNearBy": "Golf Course, Playground, Public Transit, Schools, Shopping",
+      "OwnershipTypeGroupIds": [
+        2
+      ],
+      "ParkingType": "Stall",
+      "PriceUnformattedValue": "219900"
+    },
+    "Business": {},
+    "Land": {
+      "SizeTotal": "189.39 m2"
+    },
+    "PostalCode": "T5T1Z4",
+    "HistoricalDataIsCleared": false,
+    "ProvinceName": "Alberta",
+    "RelativeDetailsURL": "/real-estate/25863646/70-willowdale-place-pl-nw-edmonton-ormsby-place",
+    "StatusId": "1",
+    "PhotoChangeDateUTC": "2023-07-22 11:37:09 AM",
+    "HasNewImageUpdate": true,
+    "Distance": "",
+    "RelativeURLEn": "/real-estate/25863646/70-willowdale-place-pl-nw-edmonton-ormsby-place",
+    "RelativeURLFr": "/immobilier/25863646/70-willowdale-place-pl-nw-edmonton",
+    "Media": [],
+    "InsertedDateUTC": "638256226298070000",
+    "TimeOnRealtor": "6 hours ago",
+    "Tags": [
+      {
+        "Label": "6 hours ago",
+        "HTMLColorCode": "#23A1C0",
+        "ListingTagTypeID": "1"
+      }
+    ]
+  },
+  {
+    "Id": "25863647",
+    "MlsNumber": "E4351147",
+    "PublicRemarks": "Be ready to be impressed when you enter this beautifully laid out home built by Parkwood Homes. This home features 3+1 bedrooms, a main floor den, large bonus room, fully finished basement with open family room, and a brand new three piece bathroom! The open concept kitchen, dining room, and living room is ideal for large family gatherings. This home boasts beautiful hardwood floors throughout most of the main floor as well as a corner gas fireplace in living room, upper level laundry room, 3.5 bathrooms, large mud room, two tiered deck, and so much more. Shingles and HWT were replaced in 2021. This is a perfect family home in a great community.  Close to trails, park, shopping, schools. (30214794)",
+    "Building": {
+      "BathroomTotal": "4",
+      "Bedrooms": "4",
+      "SizeInterior": "207.9 m2",
+      "StoriesTotal": "2",
+      "Type": "House"
+    },
+    "Individual": [
+      {
+        "IndividualID": 1477247,
+        "Name": "Lorraine Alfonsi",
+        "Organization": {
+          "OrganizationID": 67096,
+          "Name": "MaxWell Devonshire Realty",
+          "Logo": "https://cdn.realtor.ca/organization/en-CA/TS638256082300000000/lowres/1124328.jpg",
+          "Address": {
+            "AddressText": "11058 51 Ave NW|Edmonton, Alberta T6H0L4",
+            "PermitShowAddress": true,
+            "DisseminationArea": null
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "438-2500",
+              "AreaCode": "780",
+              "PhoneTypeId": "1"
+            },
+            {
+              "PhoneType": "Fax",
+              "PhoneNumber": "435-0100",
+              "AreaCode": "780",
+              "PhoneTypeId": "4"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "511516875"
+            }
+          ],
+          "OrganizationType": "Firm",
+          "HasEmail": true,
+          "PermitFreetextEmail": true,
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/office/firm/67096/maxwell-devonshire-realty-11058-51-ave-nw-edmonton-alberta-t6h0l4",
+          "PhotoLastupdate": "2023-07-22 7:37:10 AM"
+        },
+        "Phones": [
+          {
+            "PhoneType": "Telephone",
+            "PhoneNumber": "916-5589",
+            "AreaCode": "780",
+            "PhoneTypeId": "1"
+          },
+          {
+            "PhoneType": "Fax",
+            "PhoneNumber": "435-0100",
+            "AreaCode": "780",
+            "PhoneTypeId": "4"
+          }
+        ],
+        "Websites": [
+          {
+            "Website": "http://www.lorrainealfonsi.com/",
+            "WebsiteTypeId": "1"
+          }
+        ],
+        "Emails": [
+          {
+            "ContactId": "510870891"
+          }
+        ],
+        "Photo": "https://cdn.realtor.ca/individual/TS637865787000000000/lowres/1011035.jpg",
+        "Position": "Associate",
+        "PermitFreetextEmail": true,
+        "FirstName": "Lorraine",
+        "LastName": "Alfonsi",
+        "CorporationDisplayTypeId": "0",
+        "PermitShowListingLink": true,
+        "RelativeDetailsURL": "/agent/1477247/lorraine-alfonsi-11058-51-ave-nw-edmonton-alberta-t6h0l4",
+        "AgentPhotoLastUpdated": "2022-04-26 14:05:00",
+        "PhotoHighRes": "https://cdn.realtor.ca/individual/TS637865787000000000/highres/1011035.jpg",
+        "RankMyAgentKey": "",
+        "RealSatisfiedKey": "",
+        "TestimonialTreeKey": ""
+      }
+    ],
+    "Property": {
+      "Price": "$525,000",
+      "Type": "Single Family",
+      "Address": {
+        "AddressText": "142 GALLAND CR NW|Edmonton, Alberta T5T6P4",
+        "Longitude": "-113.667271324537",
+        "Latitude": "53.4990158271446",
+        "PermitShowAddress": true,
+        "DisseminationArea": null
+      },
+      "Photo": [
+        {
+          "SequenceId": "1",
+          "HighResPath": "https://cdn.realtor.ca/listings/TS638256082300400000/reb10/highres/7/E4351147_1.jpg",
+          "MedResPath": "https://cdn.realtor.ca/listings/TS638256082300400000/reb10/medres/7/E4351147_1.jpg",
+          "LowResPath": "https://cdn.realtor.ca/listings/TS638256082300400000/reb10/lowres/7/E4351147_1.jpg",
+          "LastUpdated": "2023-07-22 7:37:10 AM",
+          "TypeId": "0"
+        }
+      ],
+      "Parking": [
+        {
+          "Name": "Attached Garage"
+        }
+      ],
+      "ParkingSpaceTotal": "4",
+      "TypeId": "300",
+      "OwnershipType": "Freehold",
+      "AmmenitiesNearBy": "Playground, Public Transit, Schools, Shopping",
+      "OwnershipTypeGroupIds": [
+        1
+      ],
+      "ParkingType": "Attached Garage",
+      "PriceUnformattedValue": "525000"
+    },
+    "Business": {},
+    "Land": {
+      "SizeTotal": "482.78 m2"
+    },
+    "AlternateURL": {
+      "BrochureLink": "https://media.otbxair.com/142-Galland-Crescent-NW"
+    },
+    "PostalCode": "T5T6P4",
+    "HistoricalDataIsCleared": false,
+    "ProvinceName": "Alberta",
+    "RelativeDetailsURL": "/real-estate/25863647/142-galland-cr-nw-edmonton-glastonbury",
+    "StatusId": "1",
+    "PhotoChangeDateUTC": "2023-07-22 11:37:10 AM",
+    "HasNewImageUpdate": true,
+    "Distance": "",
+    "RelativeURLEn": "/real-estate/25863647/142-galland-cr-nw-edmonton-glastonbury",
+    "RelativeURLFr": "/immobilier/25863647/142-galland-cr-nw-edmonton",
+    "Media": [
+      {
+        "MediaCategoryId": "4",
+        "MediaCategoryURL": "https://media.otbxair.com/142-Galland-Crescent-NW",
+        "Description": "SalesBrochureWebsite",
+        "Order": 3
+      }
+    ],
+    "InsertedDateUTC": "638256226300300000",
+    "TimeOnRealtor": "6 hours ago",
+    "Tags": [
+      {
+        "Label": "6 hours ago",
+        "HTMLColorCode": "#23A1C0",
+        "ListingTagTypeID": "1"
+      }
+    ]
+  },
+  {
+    "Id": "25863648",
+    "MlsNumber": "E4351148",
+    "PublicRemarks": "This 1689 sqft 4 level split has an floor plan with 4 bedrooms above grade (3 bedrooms upper level, 1 bedroom on ground), 3 bath (2pc on main, 4pc and 2pc ensuite upstairs) with lots of new upgrading. Upgrades include New Shingles (2023), new Cabinets, new flooring, new painting, new SS appliances, and more. Huge bright living and dinning welcomes you, open concept kitchen with modern white cabinets and s.s. appliances. family room has fireplace and patio doors to large deck.  Main floor bedroom with a 2pc bath completes this level. Upstairs finds 3 bedrooms, 2 pc ensuite and 4 pc shared bath. Fully finished basement offers a massive recreation space. Brand new vinyl flooring and fresh painting through-out. Steps away from school, shopping and public transit, quick access to Yellow Head and Henday. (30214796)",
+    "Building": {
+      "BathroomTotal": "3",
+      "Bedrooms": "4",
+      "SizeInterior": "156.98 m2",
+      "StoriesTotal": "",
+      "Type": "House"
+    },
+    "Individual": [
+      {
+        "IndividualID": 2057145,
+        "Name": "Henry Han",
+        "Organization": {
+          "OrganizationID": 289243,
+          "Name": "Century 21 Masters",
+          "Logo": "https://cdn.realtor.ca/organization/en-CA/TS638256082300000000/lowres/1382471.jpg",
+          "Address": {
+            "AddressText": "5954 Gateway Blvd NW|Edmonton, Alberta T6H2H6",
+            "PermitShowAddress": true,
+            "DisseminationArea": null
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "439-3300",
+              "AreaCode": "780",
+              "PhoneTypeId": "1"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "513772729"
+            }
+          ],
+          "OrganizationType": "Firm",
+          "HasEmail": true,
+          "PermitFreetextEmail": true,
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/office/firm/289243/century-21-masters-5954-gateway-blvd-nw-edmonton-alberta-t6h2h6",
+          "PhotoLastupdate": "2023-07-22 7:37:10 AM"
+        },
+        "Phones": [
+          {
+            "PhoneType": "Telephone",
+            "PhoneNumber": "708-6698",
+            "AreaCode": "780",
+            "PhoneTypeId": "1"
+          }
+        ],
+        "Emails": [
+          {
+            "ContactId": "509117288"
+          }
+        ],
+        "Photo": "https://cdn.realtor.ca/individual/TS636679485600000000/lowres/1332388.jpg",
+        "Position": "Associate",
+        "PermitFreetextEmail": true,
+        "FirstName": "Henry",
+        "LastName": "Han",
+        "CorporationDisplayTypeId": "0",
+        "PermitShowListingLink": true,
+        "RelativeDetailsURL": "/agent/2057145/henry-han-5954-gateway-blvd-nw-edmonton-alberta-t6h2h6",
+        "AgentPhotoLastUpdated": "2018-07-23 13:16:00",
+        "PhotoHighRes": "https://cdn.realtor.ca/individual/TS636679485600000000/highres/1332388.jpg",
+        "RankMyAgentKey": "",
+        "RealSatisfiedKey": "",
+        "TestimonialTreeKey": ""
+      }
+    ],
+    "Property": {
+      "Price": "$425,000",
+      "Type": "Single Family",
+      "Address": {
+        "AddressText": "8 HARRISON DR NW|Edmonton, Alberta T5A2R4",
+        "Longitude": "-113.407129606746",
+        "Latitude": "53.5894723061966",
+        "PermitShowAddress": true,
+        "DisseminationArea": null
+      },
+      "Photo": [
+        {
+          "SequenceId": "1",
+          "HighResPath": "https://cdn.realtor.ca/listings/TS638256082303370000/reb10/highres/8/E4351148_1.jpg",
+          "MedResPath": "https://cdn.realtor.ca/listings/TS638256082303370000/reb10/medres/8/E4351148_1.jpg",
+          "LowResPath": "https://cdn.realtor.ca/listings/TS638256082303370000/reb10/lowres/8/E4351148_1.jpg",
+          "LastUpdated": "2023-07-22 7:37:10 AM",
+          "TypeId": "0"
+        }
+      ],
+      "Parking": [
+        {
+          "Name": "Attached Garage"
+        }
+      ],
+      "TypeId": "300",
+      "OwnershipType": "Freehold",
+      "AmmenitiesNearBy": "Public Transit, Schools, Shopping",
+      "OwnershipTypeGroupIds": [
+        1
+      ],
+      "ParkingType": "Attached Garage",
+      "PriceUnformattedValue": "425000"
+    },
+    "Business": {},
+    "Land": {
+      "SizeTotal": "722.07 m2"
+    },
+    "AlternateURL": {
+      "VideoLink": "https://youriguide.com/8_harrison_dr_nw_edmonton_ab/"
+    },
+    "PostalCode": "T5A2R4",
+    "HistoricalDataIsCleared": false,
+    "ProvinceName": "Alberta",
+    "RelativeDetailsURL": "/real-estate/25863648/8-harrison-dr-nw-edmonton-homesteader",
+    "StatusId": "1",
+    "PhotoChangeDateUTC": "2023-07-22 11:37:10 AM",
+    "HasNewImageUpdate": true,
+    "Distance": "",
+    "RelativeURLEn": "/real-estate/25863648/8-harrison-dr-nw-edmonton-homesteader",
+    "RelativeURLFr": "/immobilier/25863648/8-harrison-dr-nw-edmonton",
+    "Media": [
+      {
+        "MediaCategoryId": "2",
+        "MediaCategoryURL": "https://youriguide.com/8_harrison_dr_nw_edmonton_ab/",
+        "Description": "VideoTourWebsite",
+        "Order": 5,
+        "VideoType": "iGuide"
+      },
+      {
+        "MediaCategoryId": "8",
+        "MediaCategoryURL": "https://youriguide.com/8_harrison_dr_nw_edmonton_ab//doc/floorplan_metric_en_u.pdf",
+        "Description": "FloorPlan"
+      },
+      {
+        "MediaCategoryId": "8",
+        "MediaCategoryURL": "https://youriguide.com/8_harrison_dr_nw_edmonton_ab//doc/floorplan_imperial_en_u.pdf",
+        "Description": "FloorPlan"
+      }
+    ],
+    "InsertedDateUTC": "638256226303300000",
+    "TimeOnRealtor": "6 hours ago",
+    "Tags": [
+      {
+        "Label": "6 hours ago",
+        "HTMLColorCode": "#23A1C0",
+        "ListingTagTypeID": "1"
+      }
+    ]
+  },
+  {
+    "Id": "25863642",
+    "MlsNumber": "E4351142",
+    "PublicRemarks": "Condo living at it's finest, welcome to the highly sough after Aviva Condominiums. This building boast amenities such as a social room with a pool table, a gym and library to keep you entertained all year round. This two bedroom unit features an open concept layout with the bedrooms on opposite sides of the unit. The kitchen highlights granite counter tops, a spacious island and SS appliances. Also equipped in this unit is a built-in work space that's perfect for those who work from home. Moving along from your living room, there is a sliding door that not only lets natural light to flow but leads you to your balcony. The unit also comes with 2 parking spots, one underground stall and one surface stall. Conveniently located close to shopping, parks, trails and highways. (30214784)",
+    "Building": {
+      "BathroomTotal": "2",
+      "Bedrooms": "2",
+      "SizeInterior": "72.26 m2",
+      "StoriesTotal": "",
+      "Type": "Apartment"
+    },
+    "Individual": [
+      {
+        "IndividualID": 2001251,
+        "Name": "John Lao",
+        "Organization": {
+          "OrganizationID": 285048,
+          "Name": "Initia Real Estate",
+          "Logo": "https://cdn.realtor.ca/organization/en-CA/TS638256082280000000/lowres/1346884.jpg",
+          "Address": {
+            "AddressText": "201-11823 114 Ave NW|Edmonton, Alberta T5G2Y6",
+            "PermitShowAddress": true,
+            "DisseminationArea": null
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "705-5393",
+              "AreaCode": "780",
+              "PhoneTypeId": "1"
+            },
+            {
+              "PhoneType": "Fax",
+              "PhoneNumber": "705-5392",
+              "AreaCode": "780",
+              "PhoneTypeId": "4"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "511516702"
+            }
+          ],
+          "Websites": [
+            {
+              "Website": "http://www.liveinitia.ca/",
+              "WebsiteTypeId": "1"
+            }
+          ],
+          "OrganizationType": "Firm",
+          "HasEmail": true,
+          "PermitFreetextEmail": true,
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/office/firm/285048/initia-real-estate-201-11823-114-ave-nw-edmonton-alberta-t5g2y6",
+          "PhotoLastupdate": "2023-07-22 7:37:08 AM"
+        },
+        "Phones": [
+          {
+            "PhoneType": "Telephone",
+            "PhoneNumber": "919-6755",
+            "AreaCode": "780",
+            "PhoneTypeId": "1"
+          },
+          {
+            "PhoneType": "Fax",
+            "PhoneNumber": "705-5392",
+            "AreaCode": "780",
+            "PhoneTypeId": "4"
+          }
+        ],
+        "Emails": [
+          {
+            "ContactId": "509119021"
+          }
+        ],
+        "Position": "Associate",
+        "PermitFreetextEmail": true,
+        "FirstName": "John",
+        "LastName": "Lao",
+        "CorporationDisplayTypeId": "0",
+        "PermitShowListingLink": true,
+        "RelativeDetailsURL": "/agent/2001251/john-lao-201-11823-114-ave-nw-edmonton-alberta-t5g2y6",
+        "RankMyAgentKey": "",
+        "RealSatisfiedKey": "",
+        "TestimonialTreeKey": ""
+      },
+      {
+        "IndividualID": 2136593,
+        "Name": "Michael Cadorna",
+        "Organization": {
+          "OrganizationID": 285048,
+          "Name": "Initia Real Estate",
+          "Logo": "https://cdn.realtor.ca/organization/en-CA/TS638256082280000000/lowres/1346884.jpg",
+          "Address": {
+            "AddressText": "201-11823 114 Ave NW|Edmonton, Alberta T5G2Y6",
+            "PermitShowAddress": true,
+            "DisseminationArea": null
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "705-5393",
+              "AreaCode": "780",
+              "PhoneTypeId": "1"
+            },
+            {
+              "PhoneType": "Fax",
+              "PhoneNumber": "705-5392",
+              "AreaCode": "780",
+              "PhoneTypeId": "4"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "511516702"
+            }
+          ],
+          "Websites": [
+            {
+              "Website": "http://www.liveinitia.ca/",
+              "WebsiteTypeId": "1"
+            }
+          ],
+          "OrganizationType": "Firm",
+          "HasEmail": true,
+          "PermitFreetextEmail": true,
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/office/firm/285048/initia-real-estate-201-11823-114-ave-nw-edmonton-alberta-t5g2y6",
+          "PhotoLastupdate": "2023-07-22 7:37:08 AM"
+        },
+        "Phones": [
+          {
+            "PhoneType": "Telephone",
+            "PhoneNumber": "966-8746",
+            "AreaCode": "780",
+            "PhoneTypeId": "1"
+          },
+          {
+            "PhoneType": "Fax",
+            "PhoneNumber": "705-5392",
+            "AreaCode": "780",
+            "PhoneTypeId": "4"
+          }
+        ],
+        "Emails": [
+          {
+            "ContactId": "509113718"
+          }
+        ],
+        "Photo": "https://cdn.realtor.ca/individual/TS637587100200000000/lowres/1388781.jpg",
+        "Position": "Associate",
+        "PermitFreetextEmail": true,
+        "FirstName": "Michael",
+        "LastName": "Cadorna",
+        "CorporationDisplayTypeId": "0",
+        "PermitShowListingLink": true,
+        "RelativeDetailsURL": "/agent/2136593/michael-cadorna-201-11823-114-ave-nw-edmonton-alberta-t5g2y6",
+        "AgentPhotoLastUpdated": "2021-06-08 00:47:00",
+        "PhotoHighRes": "https://cdn.realtor.ca/individual/TS637587100200000000/highres/1388781.jpg",
+        "RankMyAgentKey": "",
+        "RealSatisfiedKey": "",
+        "TestimonialTreeKey": ""
+      },
+      {
+        "IndividualID": 2135673,
+        "Name": "Bryan Tran",
+        "Organization": {
+          "OrganizationID": 285048,
+          "Name": "Initia Real Estate",
+          "Logo": "https://cdn.realtor.ca/organization/en-CA/TS638256082280000000/lowres/1346884.jpg",
+          "Address": {
+            "AddressText": "201-11823 114 Ave NW|Edmonton, Alberta T5G2Y6",
+            "PermitShowAddress": true,
+            "DisseminationArea": null
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "705-5393",
+              "AreaCode": "780",
+              "PhoneTypeId": "1"
+            },
+            {
+              "PhoneType": "Fax",
+              "PhoneNumber": "705-5392",
+              "AreaCode": "780",
+              "PhoneTypeId": "4"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "511516702"
+            }
+          ],
+          "Websites": [
+            {
+              "Website": "http://www.liveinitia.ca/",
+              "WebsiteTypeId": "1"
+            }
+          ],
+          "OrganizationType": "Firm",
+          "HasEmail": true,
+          "PermitFreetextEmail": true,
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/office/firm/285048/initia-real-estate-201-11823-114-ave-nw-edmonton-alberta-t5g2y6",
+          "PhotoLastupdate": "2023-07-22 7:37:08 AM"
+        },
+        "Phones": [
+          {
+            "PhoneType": "Telephone",
+            "PhoneNumber": "394-0565",
+            "AreaCode": "780",
+            "PhoneTypeId": "1"
+          },
+          {
+            "PhoneType": "Fax",
+            "PhoneNumber": "705-5392",
+            "AreaCode": "780",
+            "PhoneTypeId": "4"
+          }
+        ],
+        "Emails": [
+          {
+            "ContactId": "511283129"
+          }
+        ],
+        "Position": "Associate",
+        "PermitFreetextEmail": true,
+        "FirstName": "Bryan",
+        "LastName": "Tran",
+        "CorporationDisplayTypeId": "0",
+        "PermitShowListingLink": true,
+        "RelativeDetailsURL": "/agent/2135673/bryan-tran-201-11823-114-ave-nw-edmonton-alberta-t5g2y6",
+        "RankMyAgentKey": "77120",
+        "RealSatisfiedKey": "",
+        "TestimonialTreeKey": ""
+      }
+    ],
+    "Property": {
+      "Price": "$229,900",
+      "Type": "Single Family",
+      "Address": {
+        "AddressText": "#227 503 ALBANY WY NW|Edmonton, Alberta T6V0L2",
+        "Longitude": "-113.554627882209",
+        "Latitude": "53.6294625056344",
+        "PermitShowAddress": true,
+        "DisseminationArea": null
+      },
+      "Photo": [
+        {
+          "SequenceId": "1",
+          "HighResPath": "https://cdn.realtor.ca/listings/TS638256082287570000/reb10/highres/2/E4351142_1.jpg",
+          "MedResPath": "https://cdn.realtor.ca/listings/TS638256082287570000/reb10/medres/2/E4351142_1.jpg",
+          "LowResPath": "https://cdn.realtor.ca/listings/TS638256082287570000/reb10/lowres/2/E4351142_1.jpg",
+          "LastUpdated": "2023-07-22 7:37:08 AM",
+          "TypeId": "0"
+        }
+      ],
+      "Parking": [
+        {
+          "Name": "Stall"
+        },
+        {
+          "Name": "Underground"
+        },
+        {
+          "Name": "See Remarks"
+        }
+      ],
+      "ParkingSpaceTotal": "2",
+      "TypeId": "300",
+      "OwnershipType": "Condominium/Strata",
+      "AmmenitiesNearBy": "Playground, Public Transit, Shopping",
+      "OwnershipTypeGroupIds": [
+        2
+      ],
+      "ParkingType": "Stall, Underground, See Remarks",
+      "PriceUnformattedValue": "229900"
+    },
+    "Business": {},
+    "Land": {},
+    "PostalCode": "T6V0L2",
+    "HistoricalDataIsCleared": false,
+    "ProvinceName": "Alberta",
+    "RelativeDetailsURL": "/real-estate/25863642/227-503-albany-wy-nw-edmonton-albany",
+    "StatusId": "1",
+    "PhotoChangeDateUTC": "2023-07-22 11:37:08 AM",
+    "HasNewImageUpdate": true,
+    "Distance": "",
+    "RelativeURLEn": "/real-estate/25863642/227-503-albany-wy-nw-edmonton-albany",
+    "RelativeURLFr": "/immobilier/25863642/227-503-albany-wy-nw-edmonton",
+    "Media": [],
+    "InsertedDateUTC": "638256226287500000",
+    "TimeOnRealtor": "6 hours ago",
+    "Tags": [
+      {
+        "Label": "6 hours ago",
+        "HTMLColorCode": "#23A1C0",
+        "ListingTagTypeID": "1"
+      }
+    ]
+  },
+  {
+    "Id": "25863644",
+    "MlsNumber": "E4351144",
+    "PublicRemarks": "Beautiful 1,301 sq. foot Adult bungalow living, located backing onto the 8th hole at the Lewis Estates Golf course in Suder Greens. This open concept designed luxury home features vaulted ceilings, hardwood flooring, 2 gas fireplaces, a bank of windows across the back of the Home to take in the golf course views, screened rear deck, double attached garage as well as 2 bedrooms up. The Kitchen comes  with a spacious granite island, stainless steel appliances, pantry & maple cabinets. Primary bedroom has its own walk-in closet & 4 piece ensuite. To round out the main level, you will discover a second bedroom/den,  2 piece bath and a large laundry room. The finished lower level has a rec. room with fireplace, 3rd bedroom with walk thru to a 4 piece bath as well as a huge storage room. No condo fees ! HOA monthly fee of $177 covers lawn cutting & snow removal. (monthly fee to be reduced to $90 in 2024). Property situated in a deep cul-de-sac so no thru traffic. Close to shopping & restaurants. Move in ready ! (30214788)",
+    "Building": {
+      "BathroomTotal": "3",
+      "Bedrooms": "3",
+      "SizeInterior": "120.86 m2",
+      "StoriesTotal": "1",
+      "Type": "Duplex"
+    },
+    "Individual": [
+      {
+        "IndividualID": 1478571,
+        "Name": "Rick Lough",
+        "Organization": {
+          "OrganizationID": 67132,
+          "Name": "RE/MAX Excellence",
+          "Logo": "https://cdn.realtor.ca/organization/en-CA/TS638256082290000000/lowres/remax.gif",
+          "Address": {
+            "AddressText": "201-5607 199 St NW|Edmonton, Alberta T6M0M8",
+            "PermitShowAddress": true,
+            "DisseminationArea": null
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "481-2950",
+              "AreaCode": "780",
+              "PhoneTypeId": "1"
+            },
+            {
+              "PhoneType": "Fax",
+              "PhoneNumber": "481-1144",
+              "AreaCode": "780",
+              "PhoneTypeId": "4"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "520829235"
+            }
+          ],
+          "OrganizationType": "Firm",
+          "HasEmail": true,
+          "PermitFreetextEmail": true,
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/office/firm/67132/remax-excellence-201-5607-199-st-nw-edmonton-alberta-t6m0m8",
+          "PhotoLastupdate": "2023-07-22 7:37:09 AM"
+        },
+        "Phones": [
+          {
+            "PhoneType": "Telephone",
+            "PhoneNumber": "718-2556",
+            "AreaCode": "780",
+            "PhoneTypeId": "1"
+          },
+          {
+            "PhoneType": "Fax",
+            "PhoneNumber": "481-1144",
+            "AreaCode": "780",
+            "PhoneTypeId": "4"
+          }
+        ],
+        "Websites": [
+          {
+            "Website": "http://www.ricklough.com/",
+            "WebsiteTypeId": "1"
+          }
+        ],
+        "Emails": [
+          {
+            "ContactId": "522031766"
+          }
+        ],
+        "Photo": "https://cdn.realtor.ca/individual/TS637865787600000000/lowres/1103789.jpg",
+        "Position": "Associate",
+        "PermitFreetextEmail": true,
+        "FirstName": "Rick",
+        "LastName": "Lough",
+        "CorporationDisplayTypeId": "0",
+        "PermitShowListingLink": true,
+        "RelativeDetailsURL": "/agent/1478571/rick-lough-201-5607-199-st-nw-edmonton-alberta-t6m0m8",
+        "AgentPhotoLastUpdated": "2022-04-26 14:06:00",
+        "PhotoHighRes": "https://cdn.realtor.ca/individual/TS637865787600000000/highres/1103789.jpg",
+        "RankMyAgentKey": "30196",
+        "RealSatisfiedKey": "",
+        "TestimonialTreeKey": ""
+      }
+    ],
+    "Property": {
+      "Price": "$562,000",
+      "Type": "Single Family",
+      "Address": {
+        "AddressText": "20558 92 \"A\" AV NW|Edmonton, Alberta T5T3B2",
+        "Longitude": "-113.671668950926",
+        "Latitude": "53.5274732426937",
+        "PermitShowAddress": true,
+        "DisseminationArea": null
+      },
+      "Photo": [
+        {
+          "SequenceId": "1",
+          "HighResPath": "https://cdn.realtor.ca/listings/TS638256082292830000/reb10/highres/4/E4351144_1.jpg",
+          "MedResPath": "https://cdn.realtor.ca/listings/TS638256082292830000/reb10/medres/4/E4351144_1.jpg",
+          "LowResPath": "https://cdn.realtor.ca/listings/TS638256082292830000/reb10/lowres/4/E4351144_1.jpg",
+          "LastUpdated": "2023-07-22 7:37:09 AM",
+          "TypeId": "0"
+        }
+      ],
+      "Parking": [
+        {
+          "Name": "Attached Garage"
+        }
+      ],
+      "ParkingSpaceTotal": "4",
+      "TypeId": "300",
+      "OwnershipType": "Freehold",
+      "AmmenitiesNearBy": "Golf Course, Public Transit, Shopping",
+      "OwnershipTypeGroupIds": [
+        1
+      ],
+      "ParkingType": "Attached Garage",
+      "PriceUnformattedValue": "562000"
+    },
+    "Business": {},
+    "Land": {
+      "SizeTotal": "349.99 m2"
+    },
+    "AlternateURL": {
+      "VideoLink": "https://my.matterport.com/show/?m=7mFQ23qmg63&mls=1"
+    },
+    "PostalCode": "T5T3B2",
+    "HistoricalDataIsCleared": false,
+    "ProvinceName": "Alberta",
+    "RelativeDetailsURL": "/real-estate/25863644/20558-92-a-av-nw-edmonton-suder-greens",
+    "StatusId": "1",
+    "PhotoChangeDateUTC": "2023-07-22 11:37:09 AM",
+    "HasNewImageUpdate": true,
+    "Distance": "",
+    "RelativeURLEn": "/real-estate/25863644/20558-92-a-av-nw-edmonton-suder-greens",
+    "RelativeURLFr": "/immobilier/25863644/20558-92-a-av-nw-edmonton",
+    "Media": [
+      {
+        "MediaCategoryId": "2",
+        "MediaCategoryURL": "https://my.matterport.com/show/?m=7mFQ23qmg63&mls=1",
+        "Description": "VideoTourWebsite",
+        "Order": 5,
+        "VideoType": "Matterport"
+      }
+    ],
+    "InsertedDateUTC": "638256226292800000",
+    "TimeOnRealtor": "6 hours ago",
+    "Tags": [
+      {
+        "Label": "6 hours ago",
+        "HTMLColorCode": "#23A1C0",
+        "ListingTagTypeID": "1"
+      }
+    ]
+  },
+  {
+    "Id": "25863643",
+    "MlsNumber": "E4351143",
+    "PublicRemarks": "Welcome to Greenfield - located right in the heart of the neighbourhood on THE ONLY tree lined street. Upon entering this well maintained & extensively renovated home you are greeted w/a spacious living room flowing into dining/kitchen space. Kitchen features maple cabinets, granite counters, SS appliances & pass through to the living space w/breakfast bar for an open feel. Beyond the dining room is a separate & spacious family room w/wet bar & full bath. The main floor also includes 2 additional beds & 1.5 baths. Moving up into the primary suite you will enjoy the privacy of being on your own level. With enough space for a king size bed, large spa-like ensuite & coffee bar - the perfect retreat. The HUGE basement features rec rooms, additional bed/bath, dual laundry areas & ample storage. Enjoy summer BBQs in the low maintenance backyard including a heated OZ double detached garage w/220V power, 10' ceilings & 2pc bath - a mechanic's dream! Walking distance to 2 elementary schools, spray park & MORE! (30214786)",
+    "Building": {
+      "BathroomTotal": "6",
+      "Bedrooms": "4",
+      "SizeInterior": "204 m2",
+      "StoriesTotal": "1.5",
+      "Type": "House"
+    },
+    "Individual": [
+      {
+        "IndividualID": 1987371,
+        "Name": "Chloe A. Pleckaitis",
+        "Organization": {
+          "OrganizationID": 273975,
+          "Name": "RE/MAX River City",
+          "Logo": "https://cdn.realtor.ca/organization/en-CA/TS638256190250000000/lowres/1253428.jpg",
+          "Address": {
+            "AddressText": "2852 Calgary Tr NW|Edmonton, Alberta T6J6V7",
+            "PermitShowAddress": true,
+            "DisseminationArea": null
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "485-5005",
+              "AreaCode": "780",
+              "PhoneTypeId": "1"
+            },
+            {
+              "PhoneType": "Fax",
+              "PhoneNumber": "432-6513",
+              "AreaCode": "780",
+              "PhoneTypeId": "4"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "509231089"
+            }
+          ],
+          "OrganizationType": "Firm",
+          "HasEmail": true,
+          "PermitFreetextEmail": true,
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/office/firm/273975/remax-river-city-2852-calgary-tr-nw-edmonton-alberta-t6j6v7",
+          "PhotoLastupdate": "2023-07-22 10:37:05 AM"
+        },
+        "Phones": [
+          {
+            "PhoneType": "Telephone",
+            "PhoneNumber": "983-0779",
+            "AreaCode": "780",
+            "PhoneTypeId": "1"
+          },
+          {
+            "PhoneType": "Fax",
+            "PhoneNumber": "432-6513",
+            "AreaCode": "780",
+            "PhoneTypeId": "4"
+          }
+        ],
+        "Websites": [
+          {
+            "Website": "http://www.chloesells.ca/",
+            "WebsiteTypeId": "1"
+          }
+        ],
+        "Emails": [
+          {
+            "ContactId": "509126427"
+          }
+        ],
+        "Photo": "https://cdn.realtor.ca/individual/TS638096790600000000/lowres/1271644.jpg",
+        "Position": "Associate",
+        "PermitFreetextEmail": true,
+        "FirstName": "Chloe",
+        "LastName": "Pleckaitis",
+        "CccMember": true,
+        "CorporationDisplayTypeId": "0",
+        "PermitShowListingLink": true,
+        "RelativeDetailsURL": "/agent/1987371/chloe-pleckaitis-2852-calgary-tr-nw-edmonton-alberta-t6j6v7",
+        "AgentPhotoLastUpdated": "2023-01-18 22:51:00",
+        "PhotoHighRes": "https://cdn.realtor.ca/individual/TS638096790600000000/highres/1271644.jpg",
+        "RankMyAgentKey": "22594",
+        "RealSatisfiedKey": "",
+        "TestimonialTreeKey": ""
+      },
+      {
+        "IndividualID": 2074967,
+        "Name": "Clara Olafson",
+        "Organization": {
+          "OrganizationID": 273975,
+          "Name": "RE/MAX River City",
+          "Logo": "https://cdn.realtor.ca/organization/en-CA/TS638256190250000000/lowres/1253428.jpg",
+          "Address": {
+            "AddressText": "2852 Calgary Tr NW|Edmonton, Alberta T6J6V7",
+            "PermitShowAddress": true,
+            "DisseminationArea": null
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "485-5005",
+              "AreaCode": "780",
+              "PhoneTypeId": "1"
+            },
+            {
+              "PhoneType": "Fax",
+              "PhoneNumber": "432-6513",
+              "AreaCode": "780",
+              "PhoneTypeId": "4"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "509231089"
+            }
+          ],
+          "OrganizationType": "Firm",
+          "HasEmail": true,
+          "PermitFreetextEmail": true,
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/office/firm/273975/remax-river-city-2852-calgary-tr-nw-edmonton-alberta-t6j6v7",
+          "PhotoLastupdate": "2023-07-22 10:37:05 AM"
+        },
+        "Phones": [
+          {
+            "PhoneType": "Telephone",
+            "PhoneNumber": "934-1533",
+            "AreaCode": "780",
+            "PhoneTypeId": "1"
+          },
+          {
+            "PhoneType": "Fax",
+            "PhoneNumber": "432-6513",
+            "AreaCode": "780",
+            "PhoneTypeId": "4"
+          }
+        ],
+        "Websites": [
+          {
+            "Website": "https://www.chloesells.ca/",
+            "WebsiteTypeId": "1"
+          },
+          {
+            "Website": "https://www.facebook.com/realestatechloeandclara/",
+            "WebsiteTypeId": "2"
+          },
+          {
+            "Website": "https://ca.linkedin.com/in/clara-gajda-45486183",
+            "WebsiteTypeId": "3"
+          }
+        ],
+        "Emails": [
+          {
+            "ContactId": "509120697"
+          }
+        ],
+        "Photo": "https://cdn.realtor.ca/individual/TS636958097400000000/lowres/1350106.jpg",
+        "Position": "Associate",
+        "PermitFreetextEmail": true,
+        "FirstName": "Clara",
+        "LastName": "Olafson",
+        "CorporationDisplayTypeId": "0",
+        "PermitShowListingLink": true,
+        "RelativeDetailsURL": "/agent/2074967/clara-olafson-2852-calgary-tr-nw-edmonton-alberta-t6j6v7",
+        "AgentPhotoLastUpdated": "2019-06-11 00:29:00",
+        "PhotoHighRes": "https://cdn.realtor.ca/individual/TS636958097400000000/highres/1350106.jpg",
+        "RankMyAgentKey": "22594",
+        "RealSatisfiedKey": "",
+        "TestimonialTreeKey": ""
+      }
+    ],
+    "Property": {
+      "Price": "$669,500",
+      "Type": "Single Family",
+      "Address": {
+        "AddressText": "3624 113B ST NW|Edmonton, Alberta T6J1L5",
+        "Longitude": "-113.52726957791",
+        "Latitude": "53.4708169207789",
+        "PermitShowAddress": true,
+        "DisseminationArea": null
+      },
+      "Photo": [
+        {
+          "SequenceId": "1",
+          "HighResPath": "https://cdn.realtor.ca/listings/TS638256082290400000/reb10/highres/3/E4351143_1.jpg",
+          "MedResPath": "https://cdn.realtor.ca/listings/TS638256082290400000/reb10/medres/3/E4351143_1.jpg",
+          "LowResPath": "https://cdn.realtor.ca/listings/TS638256082290400000/reb10/lowres/3/E4351143_1.jpg",
+          "LastUpdated": "2023-07-22 7:37:09 AM",
+          "TypeId": "0"
+        }
+      ],
+      "Parking": [
+        {
+          "Name": "Detached Garage"
+        }
+      ],
+      "TypeId": "300",
+      "OwnershipType": "Freehold",
+      "AmmenitiesNearBy": "Golf Course, Public Transit, Ski hill",
+      "OwnershipTypeGroupIds": [
+        1
+      ],
+      "ParkingType": "Detached Garage",
+      "PriceUnformattedValue": "669500"
+    },
+    "OpenHouse": [
+      {
+        "StartTime": "Jul 23/23 - 12:00 PM To 2:00 PM",
+        "StartDateTime": "23/07/2023 12:00:00 PM",
+        "EndDateTime": "23/07/2023 2:00:00 PM",
+        "FormattedDateTime": "Jul 23/23 - 12:00 PM To 2:00 PM",
+        "EventTypeID": "1"
+      }
+    ],
+    "Business": {},
+    "Land": {
+      "SizeTotal": "557.52 m2"
+    },
+    "AlternateURL": {
+      "VideoLink": "https://my.matterport.com/show/?m=LPEQKsUn224"
+    },
+    "PostalCode": "T6J1L5",
+    "HistoricalDataIsCleared": false,
+    "ProvinceName": "Alberta",
+    "RelativeDetailsURL": "/real-estate/25863643/3624-113b-st-nw-edmonton-greenfield",
+    "StatusId": "1",
+    "OpenHouseInsertDateUTC": "2023-07-22 2:40:34 PM",
+    "HasOpenHouseUpdate": true,
+    "PhotoChangeDateUTC": "2023-07-22 11:37:09 AM",
+    "HasNewImageUpdate": true,
+    "Distance": "",
+    "RelativeURLEn": "/real-estate/25863643/3624-113b-st-nw-edmonton-greenfield",
+    "RelativeURLFr": "/immobilier/25863643/3624-113b-st-nw-edmonton",
+    "ListingTimeZone": "Mountain Standard Time",
+    "ListingBoundary": "America/Edmonton",
+    "ListingGMT": "-07:00:00",
+    "Media": [
+      {
+        "MediaCategoryId": "2",
+        "MediaCategoryURL": "https://my.matterport.com/show/?m=LPEQKsUn224",
+        "Description": "VideoTourWebsite",
+        "Order": 5,
+        "VideoType": "Matterport"
+      }
+    ],
+    "InsertedDateUTC": "638256226290300000",
+    "TimeOnRealtor": "6 hours ago",
+    "Tags": [
+      {
+        "Label": "6 hours ago",
+        "HTMLColorCode": "#23A1C0",
+        "ListingTagTypeID": "1"
+      }
+    ]
+  },
+  {
+    "Id": "25863550",
+    "MlsNumber": "E4351141",
+    "PublicRemarks": "STUNNING 2 STOREY WALKOUT BASEMENT HOME WITH OVER 2500SQFT, OVERSIZED DOUBLE ATTACHED GARAGE, AND BACKS THE POND/RESERVE/WALKING TRAILS! This fully upgraded Bedrock Built home is sure to please, featuring 3 Bedrooms, 2.5 Bathrooms, massive bonus room w/ over 9ft ceilings, up stairs laundry room w/sink, and huge primary suite! The main floor features open concept, luxury vinyl plank, floor to ceiling cabinets, quartz counter tops feature tiled fireplace, walkthrough pantry, as well as the perfect den/office if you work from home! Other notable upgrades include the CENTRAL AC, water softener and smart lighting system. This property boasts a massive backyard and is fully fenced/landscaped which is perfect for the pets and entertaining. The raised deck finished off the home with the perfect view of the storm pond/environmental reserve/walking trails that are behind the home. The WALKOUT BASEMENT is unspoiled and features a 3rd full bath rough-in, storage, mechanical and loads of natural light! Don't miss out! (30214691)",
+    "Building": {
+      "BathroomTotal": "3",
+      "Bedrooms": "3",
+      "SizeInterior": "232.61 m2",
+      "StoriesTotal": "2",
+      "Type": "House",
+      "Ammenities": "Ceiling - 9ft"
+    },
+    "Individual": [
+      {
+        "IndividualID": 1981188,
+        "Name": "Keith B. Madsen",
+        "Organization": {
+          "OrganizationID": 275423,
+          "Name": "MaxWell Progressive",
+          "Logo": "https://cdn.realtor.ca/organization/en-CA/TS638255830270000000/lowres/1264963.jpg",
+          "Address": {
+            "AddressText": "5560 Windermere Blvd SW|Edmonton, Alberta T6W2Z8",
+            "PermitShowAddress": true,
+            "DisseminationArea": null
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "478-5478",
+              "AreaCode": "780",
+              "PhoneTypeId": "1"
+            },
+            {
+              "PhoneType": "Fax",
+              "PhoneNumber": "457-5240",
+              "AreaCode": "780",
+              "PhoneTypeId": "4"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "517563378"
+            }
+          ],
+          "OrganizationType": "Firm",
+          "HasEmail": true,
+          "PermitFreetextEmail": true,
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/office/firm/275423/maxwell-progressive-5560-windermere-blvd-sw-edmonton-alberta-t6w2z8",
+          "PhotoLastupdate": "2023-07-22 12:37:07 AM"
+        },
+        "Phones": [
+          {
+            "PhoneType": "Telephone",
+            "PhoneNumber": "934-2667",
+            "AreaCode": "780",
+            "PhoneTypeId": "1"
+          },
+          {
+            "PhoneType": "Fax",
+            "PhoneNumber": "457-5240",
+            "AreaCode": "780",
+            "PhoneTypeId": "4"
+          }
+        ],
+        "Websites": [
+          {
+            "Website": "http://www.keithmadsengroup.com/",
+            "WebsiteTypeId": "1"
+          },
+          {
+            "Website": "https://www.facebook.com/boomsoldrealty",
+            "WebsiteTypeId": "2"
+          }
+        ],
+        "Emails": [
+          {
+            "ContactId": "509127236"
+          }
+        ],
+        "Photo": "https://cdn.realtor.ca/individual/TS636318715800000000/lowres/1266762.jpg",
+        "Position": "Associate",
+        "PermitFreetextEmail": true,
+        "FirstName": "Keith",
+        "LastName": "Madsen",
+        "CorporationDisplayTypeId": "0",
+        "PermitShowListingLink": true,
+        "RelativeDetailsURL": "/agent/1981188/keith-madsen-5560-windermere-blvd-sw-edmonton-alberta-t6w2z8",
+        "AgentPhotoLastUpdated": "2017-05-31 23:53:00",
+        "PhotoHighRes": "https://cdn.realtor.ca/individual/TS636318715800000000/highres/1266762.jpg",
+        "RankMyAgentKey": "24778",
+        "RealSatisfiedKey": "",
+        "TestimonialTreeKey": ""
+      }
+    ],
+    "Property": {
+      "Price": "$749,900",
+      "Type": "Single Family",
+      "Address": {
+        "AddressText": "9518 PEAR CL SW|Edmonton, Alberta T6X2N6",
+        "Longitude": "-113.472935120238",
+        "Latitude": "53.4009025200378",
+        "PermitShowAddress": true,
+        "DisseminationArea": null
+      },
+      "Photo": [
+        {
+          "SequenceId": "1",
+          "HighResPath": "https://cdn.realtor.ca/listings/TS638255830273200000/reb10/highres/1/E4351141_1.jpg",
+          "MedResPath": "https://cdn.realtor.ca/listings/TS638255830273200000/reb10/medres/1/E4351141_1.jpg",
+          "LowResPath": "https://cdn.realtor.ca/listings/TS638255830273200000/reb10/lowres/1/E4351141_1.jpg",
+          "LastUpdated": "2023-07-22 12:37:07 AM",
+          "TypeId": "0"
+        }
+      ],
+      "Parking": [
+        {
+          "Name": "Attached Garage"
+        },
+        {
+          "Name": "Oversize"
+        }
+      ],
+      "TypeId": "300",
+      "OwnershipType": "Freehold",
+      "AmmenitiesNearBy": "Schools, Shopping",
+      "OwnershipTypeGroupIds": [
+        1
+      ],
+      "ParkingType": "Attached Garage, Oversize",
+      "PriceUnformattedValue": "749900"
+    },
+    "Business": {},
+    "Land": {
+      "SizeTotal": "545.66 m2"
+    },
+    "PostalCode": "T6X2N6",
+    "HistoricalDataIsCleared": false,
+    "ProvinceName": "Alberta",
+    "RelativeDetailsURL": "/real-estate/25863550/9518-pear-cl-sw-edmonton-orchards-at-ellerslie",
+    "StatusId": "1",
+    "PhotoChangeDateUTC": "2023-07-22 4:37:07 AM",
+    "HasNewImageUpdate": true,
+    "Distance": "",
+    "RelativeURLEn": "/real-estate/25863550/9518-pear-cl-sw-edmonton-orchards-at-ellerslie",
+    "RelativeURLFr": "/immobilier/25863550/9518-pear-cl-sw-edmonton",
+    "Media": [],
+    "InsertedDateUTC": "638255974273130000",
+    "TimeOnRealtor": "13 hours ago",
+    "Tags": [
+      {
+        "Label": "13 hours ago",
+        "HTMLColorCode": "#23A1C0",
+        "ListingTagTypeID": "1"
+      }
+    ]
+  },
+  {
+    "Id": "25863549",
+    "MlsNumber": "E4351139",
+    "PublicRemarks": "Looking for a large family home on a quiet street with great curb appeal?  This great central air conditioned Woodbridge home features 4 bedrooms upstairs and 1 in the basement. The moment you walk up the large front driveway, you are greeted with a large front veranda. On entrance to the home is a large entry way with a living room and dining room on your left.  The kitchen features SS appliances and kitchen nook that overlooks a large family room with gas fireplace. There is a main floor laundry room complete with sink and a dedicated shoe closet off the back entrance.  There are patio doors off the family room that lead to a very private treed back yard. Upstairs are 4 good sized bedrooms including a primary bedroom featuring a 3 piece ensuite.  There is also a 5 piece main bath upstairs.  The basement features a den and a large bedroom. There is roughed in plumbing for a bathroom.  This is an amazing and immaculate home! (30214688)",
+    "Building": {
+      "BathroomTotal": "3",
+      "Bedrooms": "5",
+      "SizeInterior": "196.12 m2",
+      "StoriesTotal": "2",
+      "Type": "House"
+    },
+    "Individual": [
+      {
+        "IndividualID": 1479130,
+        "Name": "Garry F. Rogerson",
+        "Organization": {
+          "OrganizationID": 67120,
+          "Name": "NOW Real Estate Group",
+          "Logo": "https://cdn.realtor.ca/organization/en-CA/TS638255830260000000/lowres/67120.jpg",
+          "Address": {
+            "AddressText": "510- 800 Broadmoor Blvd|Sherwood Park, Alberta T8A4Y6",
+            "PermitShowAddress": true,
+            "DisseminationArea": null
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "449-2800",
+              "AreaCode": "780",
+              "PhoneTypeId": "1"
+            },
+            {
+              "PhoneType": "Fax",
+              "PhoneNumber": "449-3499",
+              "AreaCode": "780",
+              "PhoneTypeId": "4"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "511516312"
+            }
+          ],
+          "OrganizationType": "Firm",
+          "HasEmail": true,
+          "PermitFreetextEmail": true,
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/office/firm/67120/now-real-estate-group-510-800-broadmoor-blvd-sherwood-park-alberta-t8a4y6",
+          "PhotoLastupdate": "2023-07-22 12:37:06 AM"
+        },
+        "Phones": [
+          {
+            "PhoneType": "Telephone",
+            "PhoneNumber": "233-0910",
+            "AreaCode": "780",
+            "PhoneTypeId": "1"
+          },
+          {
+            "PhoneType": "Fax",
+            "PhoneNumber": "449-3499",
+            "AreaCode": "780",
+            "PhoneTypeId": "4"
+          }
+        ],
+        "Websites": [
+          {
+            "Website": "http://www.garryrogerson.com/",
+            "WebsiteTypeId": "1"
+          }
+        ],
+        "Emails": [
+          {
+            "ContactId": "509129737"
+          }
+        ],
+        "Photo": "https://cdn.realtor.ca/individual/TS637018134000000000/lowres/1097636.jpg",
+        "Position": "Associate",
+        "PermitFreetextEmail": true,
+        "FirstName": "Garry",
+        "LastName": "Rogerson",
+        "CorporationDisplayTypeId": "0",
+        "PermitShowListingLink": true,
+        "RelativeDetailsURL": "/agent/1479130/garry-rogerson-510--800-broadmoor-blvd-sherwood-park-alberta-t8a4y6",
+        "AgentPhotoLastUpdated": "2019-08-19 12:10:00",
+        "PhotoHighRes": "https://cdn.realtor.ca/individual/TS637018134000000000/highres/1097636.jpg",
+        "RankMyAgentKey": "",
+        "RealSatisfiedKey": "",
+        "TestimonialTreeKey": ""
+      }
+    ],
+    "Property": {
+      "Price": "$484,000",
+      "Type": "Single Family",
+      "Address": {
+        "AddressText": "17 Woodfield DR|Sherwood Park, Alberta T8A4A1",
+        "Longitude": "-113.323699764418",
+        "Latitude": "53.5284278225242",
+        "PermitShowAddress": true,
+        "DisseminationArea": null
+      },
+      "Photo": [
+        {
+          "SequenceId": "1",
+          "HighResPath": "https://cdn.realtor.ca/listings/TS638256162880230000/reb10/highres/9/E4351139_1.jpg",
+          "MedResPath": "https://cdn.realtor.ca/listings/TS638256162880230000/reb10/medres/9/E4351139_1.jpg",
+          "LowResPath": "https://cdn.realtor.ca/listings/TS638256162880230000/reb10/lowres/9/E4351139_1.jpg",
+          "LastUpdated": "2023-07-22 9:51:28 AM",
+          "TypeId": "0"
+        }
+      ],
+      "Parking": [
+        {
+          "Name": "Attached Garage"
+        }
+      ],
+      "ParkingSpaceTotal": "6",
+      "TypeId": "300",
+      "OwnershipType": "Freehold",
+      "AmmenitiesNearBy": "Golf Course, Schools, Shopping",
+      "OwnershipTypeGroupIds": [
+        1
+      ],
+      "ParkingType": "Attached Garage",
+      "PriceUnformattedValue": "484000"
+    },
+    "Business": {},
+    "Land": {
+      "SizeTotal": "680 m2"
+    },
+    "AlternateURL": {
+      "VideoLink": "https://youriguide.com/17_woodfield_dr_sherwood_park_ab/"
+    },
+    "PostalCode": "T8A4A1",
+    "HistoricalDataIsCleared": false,
+    "ProvinceName": "Alberta",
+    "RelativeDetailsURL": "/real-estate/25863549/17-woodfield-dr-sherwood-park-woodbridge-farms",
+    "StatusId": "1",
+    "PhotoChangeDateUTC": "2023-07-22 1:51:36 PM",
+    "HasNewImageUpdate": true,
+    "Distance": "",
+    "RelativeURLEn": "/real-estate/25863549/17-woodfield-dr-sherwood-park-woodbridge-farms",
+    "RelativeURLFr": "/immobilier/25863549/17-woodfield-dr-sherwood-park",
+    "Media": [
+      {
+        "MediaCategoryId": "2",
+        "MediaCategoryURL": "https://youriguide.com/17_woodfield_dr_sherwood_park_ab/",
+        "Description": "VideoTourWebsite",
+        "Order": 5,
+        "VideoType": "iGuide"
+      },
+      {
+        "MediaCategoryId": "8",
+        "MediaCategoryURL": "https://youriguide.com/17_woodfield_dr_sherwood_park_ab//doc/floorplan_metric_en_u.pdf",
+        "Description": "FloorPlan"
+      },
+      {
+        "MediaCategoryId": "8",
+        "MediaCategoryURL": "https://youriguide.com/17_woodfield_dr_sherwood_park_ab//doc/floorplan_imperial_en_u.pdf",
+        "Description": "FloorPlan"
+      }
+    ],
+    "InsertedDateUTC": "638255974266970000",
+    "TimeOnRealtor": "13 hours ago",
+    "Tags": [
+      {
+        "Label": "13 hours ago",
+        "HTMLColorCode": "#23A1C0",
+        "ListingTagTypeID": "1"
+      }
+    ]
+  },
+  {
+    "Id": "25863516",
+    "MlsNumber": "E4351138",
+    "PublicRemarks": "Welcome to this gorgeous, Modernist bungalow by architect Larry Loh in the prestigious community of Westbrook Estates. A true oasis, this home is situated on a large lot with mature trees, complete with a huge composite deck for entertaining. Inside you will find an enchanting central atrium with stunning 14 ft cedar ceilings and pyramidal skylight the natural light in this home is truly spectacular. Luxurious custom kitchen features walnut and white-gloss millwork, quartz countertops, and top-of-the line appliances including built-in Miele fridge and espresso machine. The 2800 sq ft main floor also boasts a spacious living room, dining room, three bedrooms plus den/home office, 3 full bathrooms, laundry, and attached 2 car garage with vaulted ceilings throughout. The beautifully-finished basement hosts a nanny/in-law suite complete with separate entrance. Amazing school catchment, river valley trails, and Derrick golf course nearbythere is so much to love in this one-of-kind home. Walk in and say wow! (30214654)",
+    "Building": {
+      "BathroomTotal": "4",
+      "Bedrooms": "5",
+      "SizeInterior": "262.74 m2",
+      "StoriesTotal": "1",
+      "Type": "House",
+      "Ammenities": "Ceiling - 10ft, Ceiling - 9ft"
+    },
+    "Individual": [
+      {
+        "IndividualID": 1773308,
+        "Name": "Ken A. Krochmal",
+        "Organization": {
+          "OrganizationID": 153877,
+          "Name": "Logic Realty",
+          "Address": {
+            "AddressText": "6211 187B St NW|Edmonton, Alberta T5T5T3",
+            "PermitShowAddress": true,
+            "DisseminationArea": null
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "915-6442",
+              "AreaCode": "780",
+              "PhoneTypeId": "1"
+            },
+            {
+              "PhoneType": "Fax",
+              "PhoneNumber": "455-1609",
+              "AreaCode": "780",
+              "PhoneTypeId": "4"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "511516278"
+            }
+          ],
+          "OrganizationType": "Firm",
+          "HasEmail": true,
+          "PermitFreetextEmail": true,
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/office/firm/153877/logic-realty-6211-187b-st-nw-edmonton-alberta-t5t5t3",
+          "PhotoLastupdate": "2023-07-22 12:37:05 AM"
+        },
+        "Phones": [
+          {
+            "PhoneType": "Telephone",
+            "PhoneNumber": "722-8047",
+            "AreaCode": "780",
+            "PhoneTypeId": "1"
+          },
+          {
+            "PhoneType": "Fax",
+            "PhoneNumber": "455-1609",
+            "AreaCode": "780",
+            "PhoneTypeId": "4"
+          }
+        ],
+        "Websites": [
+          {
+            "Website": "http://kensells.ca/",
+            "WebsiteTypeId": "1"
+          }
+        ],
+        "Emails": [
+          {
+            "ContactId": "517579601"
+          }
+        ],
+        "Position": "Associate",
+        "PermitFreetextEmail": true,
+        "FirstName": "Ken",
+        "LastName": "Krochmal",
+        "CorporationDisplayTypeId": "0",
+        "PermitShowListingLink": true,
+        "RelativeDetailsURL": "/agent/1773308/ken-krochmal-6211-187b-st-nw-edmonton-alberta-t5t5t3",
+        "RankMyAgentKey": "",
+        "RealSatisfiedKey": "",
+        "TestimonialTreeKey": ""
+      }
+    ],
+    "Property": {
+      "Price": "$1,399,000",
+      "Type": "Single Family",
+      "Address": {
+        "AddressText": "5 MARLBORO RD NW|Edmonton, Alberta T6J2C7",
+        "Longitude": "-113.552873953967",
+        "Latitude": "53.4727182010578",
+        "PermitShowAddress": true,
+        "DisseminationArea": null
+      },
+      "Photo": [
+        {
+          "SequenceId": "1",
+          "HighResPath": "https://cdn.realtor.ca/listings/TS638255812473570000/reb10/highres/8/E4351138_1.jpg",
+          "MedResPath": "https://cdn.realtor.ca/listings/TS638255812473570000/reb10/medres/8/E4351138_1.jpg",
+          "LowResPath": "https://cdn.realtor.ca/listings/TS638255812473570000/reb10/lowres/8/E4351138_1.jpg",
+          "LastUpdated": "2023-07-22 12:07:27 AM",
+          "TypeId": "0"
+        }
+      ],
+      "Parking": [
+        {
+          "Name": "Attached Garage"
+        }
+      ],
+      "ParkingSpaceTotal": "4",
+      "TypeId": "300",
+      "OwnershipType": "Freehold",
+      "AmmenitiesNearBy": "Golf Course, Playground, Public Transit, Schools, Shopping",
+      "OwnershipTypeGroupIds": [
+        1
+      ],
+      "ParkingType": "Attached Garage",
+      "PriceUnformattedValue": "1399000"
+    },
+    "Business": {},
+    "Land": {
+      "SizeTotal": "1097.46 m2"
+    },
+    "AlternateURL": {
+      "VideoLink": "https://youriguide.com/5_marlboro_rd_nw_edmonton_ab/"
+    },
+    "PostalCode": "T6J2C7",
+    "HistoricalDataIsCleared": false,
+    "ProvinceName": "Alberta",
+    "RelativeDetailsURL": "/real-estate/25863516/5-marlboro-rd-nw-edmonton-westbrook-estate",
+    "StatusId": "1",
+    "PhotoChangeDateUTC": "2023-07-22 4:07:27 AM",
+    "HasNewImageUpdate": true,
+    "Distance": "",
+    "RelativeURLEn": "/real-estate/25863516/5-marlboro-rd-nw-edmonton-westbrook-estate",
+    "RelativeURLFr": "/immobilier/25863516/5-marlboro-rd-nw-edmonton",
+    "Media": [
+      {
+        "MediaCategoryId": "2",
+        "MediaCategoryURL": "https://youriguide.com/5_marlboro_rd_nw_edmonton_ab/",
+        "Description": "VideoTourWebsite",
+        "Order": 5,
+        "VideoType": "iGuide"
+      },
+      {
+        "MediaCategoryId": "8",
+        "MediaCategoryURL": "https://youriguide.com/5_marlboro_rd_nw_edmonton_ab//doc/floorplan_metric_en_u.pdf",
+        "Description": "FloorPlan"
+      },
+      {
+        "MediaCategoryId": "8",
+        "MediaCategoryURL": "https://youriguide.com/5_marlboro_rd_nw_edmonton_ab//doc/floorplan_imperial_en_u.pdf",
+        "Description": "FloorPlan"
+      }
+    ],
+    "InsertedDateUTC": "638255956473470000",
+    "TimeOnRealtor": "13 hours ago",
+    "Tags": [
+      {
+        "Label": "13 hours ago",
+        "HTMLColorCode": "#23A1C0",
+        "ListingTagTypeID": "1"
+      }
+    ]
+  }
+]
