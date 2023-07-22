@@ -30,7 +30,7 @@ class Listing:
         self.property_type = listing['Property']['Type']
         self.full_address = listing['Property']['Address']['AddressText']
         self.latitude = listing['Property']['Address']['Latitude']
-        self.longitude = listing['Property']['Address']['AddressText']
+        self.longitude = listing['Property']['Address']['Longitude']
         self.photo = listing.get('Photo', '')
         self.ownership_type = listing['Property'].get('OwnershipType', '')
         self.ammenities_nearby = listing['Property'].get('AmmenitiesNearBy', '')
