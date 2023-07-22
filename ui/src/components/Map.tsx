@@ -4,23 +4,24 @@ import "leaflet/dist/leaflet.css";
 import MarkerClusterGroup from "react-leaflet-cluster";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
-interface Home {
-  id: number;
-  address: string;
-  price: number;
-  lat: number;
-  lng: number;
-}
+import useHomes, { type Home } from "../hooks/useHomes";
 
 interface HomeProps {
   home: Home;
 }
 
-function Home({ home }: HomeProps) {
+function HomeMarker({ home }: HomeProps) {
+  const position = { lat: parseFloat(home.latitude), lng: parseFloat(home.longitude) };
+
+  if (!position.lat || !position.lng) {
+    console.log(position, home)
+    return null;
+  }
+
   return (
-    <Marker position={{ lat: home.lat, lng: home.lng }}>
+    <Marker position={{ lat: parseFloat(home.latitude), lng: parseFloat(home.longitude) }}>
       <Popup>
-        {home.address}
+        {home.full_address}
         <br />${home.price}
       </Popup>
     </Marker>
@@ -29,29 +30,7 @@ function Home({ home }: HomeProps) {
 
 export default function Map() {
   const position = { lat: 53.55014, lng: -113.46871 };
-  const homes: Home[] = [
-    {
-      id: 0,
-      address: "441 That St.",
-      price: 325500,
-      lat: 53.45014,
-      lng: -113.46871,
-    },
-    {
-      id: 1,
-      address: "5231 102 Ave.",
-      price: 550000,
-      lat: 53.56014,
-      lng: -113.46881,
-    },
-    {
-      id: 2,
-      address: "5232 102 Ave.",
-      price: 550000,
-      lat: 53.56114,
-      lng: -113.46881,
-    },
-  ];
+  const { homes } = useHomes();
 
   return (
     <Card sx={{ flex: 2, display: "block", boxShadow: "none" }}>
@@ -67,8 +46,8 @@ export default function Map() {
         />
 
         <MarkerClusterGroup>
-          {homes.map((home) => (
-            <Home key={home.id} home={home} />
+          {(homes ?? []).map((home) => (
+            <HomeMarker key={home.uuid} home={home} />
           ))}
         </MarkerClusterGroup>
       </MapContainer>
