@@ -46,7 +46,7 @@ export default function Map() {
   ];
 
   return (
-    <Card sx={{ flex: 2, display: "block" }}>
+    <Card sx={{ flex: 2, display: "block", boxShadow: "none" }}>
       <MapContainer
         style={{ width: "100%", height: "100%" }}
         center={position}

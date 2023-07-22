@@ -80,7 +80,7 @@ export default function Chat() {
   }, [message]);
 
   return (
-    <Card sx={{ minWidth: 400, flex: 1, mr: 1 }}>
+    <Card sx={{ minWidth: 400, flex: 1, mr: 1, boxShadow: "none" }}>
       <Stack direction="column" height="100%">
         <Stack
           direction="column"
