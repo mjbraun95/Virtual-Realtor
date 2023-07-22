@@ -22,7 +22,7 @@ class Listing:
         self.uuid = uuid.uuid4()
         # self.r_id = listing['Id']
         # self.remarks = listing['PublicRemarks']
-        self.bathrooms = listing['Building']['BathroomTotal']
+        self.bathrooms = listing['Building'].get('BathroomTotal', '')
         self.bedrooms = listing['Building']['Bedrooms']
         self.size_interior = listing['Building']['SizeInterior']
         self.building_type = listing['Building']['Type']
