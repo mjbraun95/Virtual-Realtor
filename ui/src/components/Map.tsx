@@ -1,6 +1,7 @@
 import { Card } from "@mui/material";
 
 import "leaflet/dist/leaflet.css";
+import MarkerClusterGroup from "react-leaflet-cluster";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 interface Home {
@@ -43,6 +44,13 @@ export default function Map() {
       lat: 53.56014,
       lng: -113.46881,
     },
+    {
+      id: 2,
+      address: "5232 102 Ave.",
+      price: 550000,
+      lat: 53.56114,
+      lng: -113.46881,
+    },
   ];
 
   return (
@@ -58,9 +66,11 @@ export default function Map() {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
 
-        {homes.map((home) => (
-          <Home key={home.id} home={home} />
-        ))}
+        <MarkerClusterGroup>
+          {homes.map((home) => (
+            <Home key={home.id} home={home} />
+          ))}
+        </MarkerClusterGroup>
       </MapContainer>
     </Card>
   );
