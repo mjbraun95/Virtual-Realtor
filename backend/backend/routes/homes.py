@@ -8,7 +8,10 @@ class HomesHandler(tornado.web.RequestHandler):
     async def post(self):
         conn = await asyncpg.connect(user='virtualRealtor', password='.u~#QGCWA|X!W}Z!qnKJn3M.Xl{:', database='postgres', host='hackgpt-instance-1.cnxjxko2aofz.us-east-1.rds.amazonaws.com')
 
-        args = json.loads(self.request.body)
+        try:
+            args = json.loads(self.request.body)
+        except json.decoder.JSONDecodeError:
+            args = {}
 
         query = get_filter_query(args)
         rows = await conn.fetch(query)
