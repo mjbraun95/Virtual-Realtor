@@ -1,3 +1,4 @@
+import "./Chat.css";
 import { useCallback, useState } from "react";
 import { SendRounded } from "@mui/icons-material";
 import {
@@ -9,9 +10,77 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import "./Chat.css";
-
 import { Configuration, OpenAIApi, ChatCompletionRequestMessage } from "openai";
+// const previousFilters = `
+// {
+//   "transaction_type": null,
+//   "property_type": null,
+//   "min_price": null,
+//   "max_price": null,
+//   "min_bedrooms": null,
+//   "max_bedrooms": null,
+//   "min_bathrooms": null,
+//   "max_bathrooms": null,
+//   "listed_since": null,
+//   "year_built": null,
+//   "open_houses_only": null,
+//   "live_streams_only": null,
+//   "keywords": null,
+//   "building_type": null,
+//   "min_storeys": null,
+//   "max_storeys": null,
+//   "ownership": null,
+//   "min_land_size_in_acres": null,
+//   "max_land_size_in_acres": null
+// }
+
+// `
+
+const assistant_prompt = `You are a realtor having a conversation with a home buyer. A GPT is analyzing the conversation to extract the following filters:
+
+Bring up price restrictions and consider, based on what you know about current areas, what the quality of living should be like, what might surprise the buyer, and what they should watch out for.
+You need to ask the user what details or filters they care about.
+Some buyers may be new to the culture so make intelligent assumptions if they don't tell you.
+
+The point is to ensure the observing GPT has all the information it needs.
+
+At the end of the conversation or when you feel like you have asked enough questions, you will reply with some curly braces {}, the other GPT will insert some real time data into these so be sure to leave them blank.
+All the info filters from the conversation, so after your first mini paragraph, simply place the curly braces and end the generation.
+`
+const buildPrompt = (newMessage:Message) => `
+We are analysing a conversation between a realtor and a home buyer. The home buyer sent the following message:
+
+${newMessage.body}
+
+We need to extract a set of filters to help narrow down their search. The filters have this format:
+
+{   
+  "transaction_type": "for_sale", 
+  "property_type": "any", 
+  "min_price": 250000, 
+  "max_price": 300000,
+  "min_bedrooms": 3,
+  "max_bedrooms": 3, 
+  "min_bathrooms": 1, 
+  "max_bathrooms": 1, 
+  "listed_since": "2023-1-1", 
+  "year_built": 2023, 
+  "open_houses_only": True, 
+  "live_streams_only": False, 
+  "keywords": ["golf course", "pond"], 
+  "building_type": "any", 
+  "min_storeys": 1, 
+  "max_storeys": 1,
+  "ownership": "timeshare/fractional", 
+  "min_land_size_in_acres": 0.5, 
+  "max_land_size_in_acres": 0.5
+}
+
+Even if some of those details aren't explicitly filled, you still need to fill all of them. Use the placeholder "any"
+What are the filters of the homebuyers message? Only answer in JSON. Do not produce any extra text.
+
+
+`;
 
 const config = new Configuration({
   apiKey: import.meta.env.VITE_OPENAI_API_KEY,
@@ -29,19 +98,26 @@ function messagesToConversation(
 
 async function sendMessage(messages: Message[]): Promise<string> {
   const conversation = messagesToConversation(messages);
-  
-  const mySpecialContext = [{ role: "user", content: "...." }, ...conversation];
+
+  const displayMessage = messages[messages.length - 1]
+    ? `The user's new message is ${messages[messages.length - 1]}`
+    : "No new message";
+  const mySpecialContext = [
+    ...conversation,
+    { role: "user", content: buildPrompt(displayMessage) },
+  ];
+  console.log(mySpecialContext);
   const mySpecialCompletion = await api.createChatCompletion({
-    model: "gpt-3.5-turbo",
+    model: "gpt-4",
     messages: mySpecialContext,
     max_tokens: 500,
   });
   console.log(mySpecialCompletion);
 
   const completion = await api.createChatCompletion({
-    model: "gpt-3.5-turbo",
-    messages: conversation,
-    max_tokens: 60
+    model: "gpt-4",
+    messages: [{ role: "user", content: assistant_prompt}, ...conversation],
+    max_tokens: 500,
   });
 
   return completion.data.choices[0].message?.content as string;
