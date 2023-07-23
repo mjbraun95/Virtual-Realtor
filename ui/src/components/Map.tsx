@@ -7,7 +7,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import useHomes, { type Home } from "../hooks/useHomes";
 
 import "./Map.css";
-import { BathtubRounded, BedRounded } from "@mui/icons-material";
+import { BathtubRounded, BedRounded, SquareFootRounded } from "@mui/icons-material";
 
 const ImagePreview = styled('img')({
   width: "100%",
@@ -38,17 +38,10 @@ interface HomeProps {
   home: Home;
 }
 
-function HomeMarker({ home }: HomeProps) {
-  const position = { lat: parseFloat(home.latitude), lng: parseFloat(home.longitude) };
-
-  if (!position.lat || !position.lng) {
-    console.log(position, home)
-    return null;
-  }
-
+function HomeDetails({ home }: HomeProps) {
   const [addrPrimary, addrSecondary] = home.full_address.split('|');
 
-  const fMoney = (price: number) => {
+  const fMoney = (price: number): string => {
     const formatter = new Intl.NumberFormat('en-US', {
       style: 'currency',
       currency: 'USD',
@@ -59,29 +52,48 @@ function HomeMarker({ home }: HomeProps) {
   };
 
   return (
+    <>
+      <ImagePreview src={home.photo} />
+      <PopupContents>
+        <p style={{ padding: "6px 8px", minWidth: 250 }}>
+          <b>{addrPrimary}</b><br />
+          <i>{addrSecondary}</i><br />
+          <InfoGutter>
+            <span className="price">{fMoney(parseFloat(home.price))}</span>
+
+            <div style={{ flex: 1 }} />
+
+            <span className="area">
+              <SquareFootRounded />
+              {home.size_interior}
+            </span>
+            <span className="beds">
+              <BedRounded sx={{ mr: 1 }} />
+              {home.bedrooms}
+            </span>
+            <span className="baths">
+              <BathtubRounded sx={{ mr: 1 }} />
+              {home.bathrooms}
+            </span>
+          </InfoGutter>
+        </p>
+      </PopupContents>
+    </>
+  );
+}
+
+function HomeMarker({ home }: HomeProps) {
+  const position = { lat: parseFloat(home.latitude), lng: parseFloat(home.longitude) };
+
+  if (!position.lat || !position.lng) {
+    console.log(position, home)
+    return null;
+  }
+
+  return (
     <Marker position={{ lat: parseFloat(home.latitude), lng: parseFloat(home.longitude) }}>
       <Popup>
-        <ImagePreview src={home.photo} />
-        <PopupContents>
-          <p style={{ padding: "6px 8px", minWidth: 250 }}>
-            <b>{addrPrimary}</b><br />
-            <i>{addrSecondary}</i><br />
-            <InfoGutter>
-              <span className="price">{fMoney(home.price)}</span>
-
-              <div style={{ flex: 1 }} />
-
-              <span className="beds">
-                <BedRounded sx={{ mr: 1 }} />
-                {home.bedrooms}
-              </span>
-              <span className="baths">
-                <BathtubRounded sx={{ mr: 1 }} />
-                {home.bathrooms}
-              </span>
-            </InfoGutter>
-          </p>
-        </PopupContents>
+        <HomeDetails home={home} />
       </Popup>
     </Marker>
   );

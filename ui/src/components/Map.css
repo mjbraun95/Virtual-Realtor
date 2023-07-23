@@ -23,6 +23,12 @@ i {
   font-size: 16px;
 }
 
+.area {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+
 .beds {
   display: flex;
   align-items: center;
