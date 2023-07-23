@@ -1,21 +1,27 @@
+import { forwardRef } from "react";
 import { Card } from "@mui/material";
 
 import "leaflet/dist/leaflet.css";
 import MarkerClusterGroup from "react-leaflet-cluster";
+import { Map as IMap } from "leaflet";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-import useHomes from "../hooks/useHomes";
+import { Home } from "../hooks/useHomes";
 import { HomeMarker } from "./Home";
 
 import "./Map.css";
 
-export default function Map() {
+interface MapProps {
+  homes: Home[]
+}
+
+const Map = forwardRef<IMap, MapProps>(({ homes }, ref) => {
   const position = { lat: 53.55014, lng: -113.46871 };
-  const { homes } = useHomes();
 
   return (
-    <Card sx={{ flex: 2, display: "block", boxShadow: "none" }}>
+    <Card sx={{ flex: 1, display: "block", boxShadow: "none" }}>
       <MapContainer
+        ref={ref}
         style={{ width: "100%", height: "100%" }}
         center={position}
         zoom={11}
@@ -27,11 +33,13 @@ export default function Map() {
         />
 
         <MarkerClusterGroup>
-          {(homes ?? []).map((home) => (
+          {homes.map((home) => (
             <HomeMarker key={home.uuid} home={home} />
           ))}
         </MarkerClusterGroup>
       </MapContainer>
     </Card>
   );
-}
+});
+
+export default Map;

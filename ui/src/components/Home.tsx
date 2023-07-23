@@ -1,16 +1,16 @@
-import { styled } from "@mui/material";
-
-import "leaflet/dist/leaflet.css";
-import { Marker, Popup } from "react-leaflet";
-
-import { type Home } from "../hooks/useHomes";
-
 import "./Map.css";
+
+import { Box, Card, CardActionArea, Typography, styled } from "@mui/material";
 import {
   BathtubRounded,
   BedRounded,
   SquareFootRounded,
 } from "@mui/icons-material";
+
+import "leaflet/dist/leaflet.css";
+import { Marker, Popup } from "react-leaflet";
+
+import { Home } from "../hooks/useHomes";
 
 const ImagePreview = styled("img")({
   width: "100%",
@@ -63,7 +63,10 @@ export function HomeDetails({ home }: HomeProps) {
     <>
       <ImagePreview src={home.photo} />
       <PopupContents>
-        <p style={{ padding: "6px 8px", minWidth: 250 }}>
+        <Typography
+          variant="body2"
+          style={{ padding: "6px 8px", minWidth: 250 }}
+        >
           <b>{addrPrimary}</b>
           <br />
           <i>{addrSecondary}</i>
@@ -86,7 +89,7 @@ export function HomeDetails({ home }: HomeProps) {
               {home.bathrooms}
             </span>
           </InfoGutter>
-        </p>
+        </Typography>
       </PopupContents>
     </>
   );
@@ -106,5 +109,34 @@ export function HomeMarker({ home }: HomeProps) {
         <HomeDetails home={home} />
       </Popup>
     </Marker>
+  );
+}
+
+interface HomeListProps {
+  homes: Home[],
+}
+
+export default function HomeList({ homes }: HomeListProps) {
+  return (
+    <Card
+      sx={{
+        display: "inline-flex",
+        overflowX: "scroll",
+        overflowY: "visible",
+        boxShadow: "none",
+        maxWidth: "60vw",
+        height: 290,
+        pt: 1,
+      }}
+    >
+      {homes.map((home) => (
+        <Card key={home.uuid} sx={{ mr: 1, minWidth: 275 }} variant="outlined">
+          <CardActionArea onClick={() => console.log("TODO")}>
+            <HomeDetails home={home} />
+            <Box height={9} />
+          </CardActionArea>
+        </Card>
+      ))}
+    </Card>
   );
 }
