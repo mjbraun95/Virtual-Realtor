@@ -2,13 +2,13 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 
 export interface Home {
   full_address: string,
-  latitude: string,
-  longitude: string,
+  latitude: number,
+  longitude: number,
   uuid: string,
-  size_interior: string,
-  stories: string,
+  size_interior: number,
+  stories: number,
   building_type: string,
-  price: string,
+  price: number,
   parking_type: string,
   ammenities: string,
   photo: string,

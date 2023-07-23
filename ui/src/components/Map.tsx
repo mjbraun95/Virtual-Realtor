@@ -1,4 +1,4 @@
-import { Card } from "@mui/material";
+import { Card, styled } from "@mui/material";
 
 import "leaflet/dist/leaflet.css";
 import MarkerClusterGroup from "react-leaflet-cluster";
@@ -6,12 +6,89 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 import useHomes, { type Home } from "../hooks/useHomes";
 
+import "./Map.css";
+import { BathtubRounded, BedRounded, SquareFootRounded } from "@mui/icons-material";
+
+const ImagePreview = styled('img')({
+  width: "100%",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  margin: 0,
+  borderRadius: 4,
+});
+
+const PopupContents = styled('div')({
+  width: "100%",
+  height: "100%",
+
+  borderRadius: 4,
+  backgroundColor: "white",
+  marginTop: -16,
+
+  position: "relative",
+});
+
+const InfoGutter = styled('div')({
+  display: "flex",
+  width: "100%",
+  paddingTop: 4,
+});
+
 interface HomeProps {
   home: Home;
 }
 
+function HomeDetails({ home }: HomeProps) {
+  const [addrPrimary, addrSecondary] = home.full_address.split('|');
+
+  const fMoney = (price: number): string => {
+    const formatter = new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      maximumFractionDigits: 0,
+    });
+
+    return formatter.format(price);
+  };
+
+  const fArea = (area: number): string => {
+    const formatted = Math.round(area * 10) / 10;
+    return formatted.toString() + " m²"
+  };
+
+  return (
+    <>
+      <ImagePreview src={home.photo} />
+      <PopupContents>
+        <p style={{ padding: "6px 8px", minWidth: 250 }}>
+          <b>{addrPrimary}</b><br />
+          <i>{addrSecondary}</i><br />
+          <InfoGutter>
+            <span className="price">{fMoney(home.price)}</span>
+
+            <div style={{ flex: 1 }} />
+
+            <span className="area">
+              <SquareFootRounded />
+              {fArea(home.size_interior)}
+            </span>
+            <span className="beds">
+              <BedRounded sx={{ mr: 1 }} />
+              {home.bedrooms}
+            </span>
+            <span className="baths">
+              <BathtubRounded sx={{ mr: 1 }} />
+              {home.bathrooms}
+            </span>
+          </InfoGutter>
+        </p>
+      </PopupContents>
+    </>
+  );
+}
+
 function HomeMarker({ home }: HomeProps) {
-  const position = { lat: parseFloat(home.latitude), lng: parseFloat(home.longitude) };
+  const position = { lat: home.latitude, lng: home.longitude };
 
   if (!position.lat || !position.lng) {
     console.log(position, home)
@@ -19,10 +96,9 @@ function HomeMarker({ home }: HomeProps) {
   }
 
   return (
-    <Marker position={{ lat: parseFloat(home.latitude), lng: parseFloat(home.longitude) }}>
+    <Marker position={position}>
       <Popup>
-        {home.full_address}
-        <br />${home.price}
+        <HomeDetails home={home} />
       </Popup>
     </Marker>
   );
