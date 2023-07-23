@@ -36,7 +36,7 @@ import { Configuration, OpenAIApi, ChatCompletionRequestMessage } from "openai";
 
 // `
 
-const assistant_prompt = `You are a realtor having a conversation with a home buyer. A GPT is analyzing the conversation to extract the following filters:
+const assistant_prompt = `You are a realtor having a conversation with a home buyer. A GPT is analyzing the conversation to extract filters:
 
 Bring up price restrictions and consider, based on what you know about current areas, what the quality of living should be like, what might surprise the buyer, and what they should watch out for.
 You need to ask the user what details or filters they care about.
@@ -44,8 +44,7 @@ Some buyers may be new to the culture so make intelligent assumptions if they do
 
 The point is to ensure the observing GPT has all the information it needs.
 
-At the end of the conversation or when you feel like you have asked enough questions, you will reply with some curly braces {}, the other GPT will insert some real time data into these so be sure to leave them blank.
-All the info filters from the conversation, so after your first mini paragraph, simply place the curly braces and end the generation.
+After clarifying message sent by the user, consider following up, and inform the user to check the map on the right.
 `
 const buildPrompt = (newMessage:Message) => `
 We are analysing a conversation between a realtor and a home buyer. The home buyer sent the following message:
