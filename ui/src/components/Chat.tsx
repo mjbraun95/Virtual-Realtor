@@ -36,6 +36,18 @@ import { Configuration, OpenAIApi, ChatCompletionRequestMessage } from "openai";
 // }
 
 // `
+
+const assistant_prompt = `You are a realtor having a conversation with a home buyer. A GPT is analyzing the conversation to extract the following filters:
+
+Bring up price restrictions and consider, based on what you know about current areas, what the quality of living should be like, what might surprise the buyer, and what they should watch out for.
+You need to ask the user what details or filters they care about.
+Some buyers may be new to the culture so make intelligent assumptions if they don't tell you.
+
+The point is to ensure the observing GPT has all the information it needs.
+
+At the end of the conversation or when you feel like you have asked enough questions, you will reply with some curly braces {}, the other GPT will insert some real time data into these so be sure to leave them blank.
+All the info filters from the conversation, so after your first mini paragraph, simply place the curly braces and end the generation.
+`
 const buildPrompt = (newMessage:Message) => `
 We are analysing a conversation between a realtor and a home buyer. The home buyer sent the following message:
 
@@ -65,6 +77,7 @@ We need to extract a set of filters to help narrow down their search. The filter
   "max_land_size_in_acres": 0.5
 }
 
+Even if some of those details aren't explicitly filled, you still need to fill all of them. Use the placeholder "any"
 What are the filters of the homebuyers message? Only answer in JSON. Do not produce any extra text.
 
 
@@ -94,8 +107,8 @@ async function sendMessage(messages: Message[]): Promise<string> {
   console.log(mySpecialCompletion);
 
   const completion = await api.createChatCompletion({
-    model: "gpt-3.5-turbo",
-    messages: conversation,
+    model: "gpt-4",
+    messages: [{ role: "user", content: assistant_prompt}, ...conversation],
     max_tokens: 500,
   });
 
