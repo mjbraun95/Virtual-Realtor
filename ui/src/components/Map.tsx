@@ -5,9 +5,9 @@ import MarkerClusterGroup from "react-leaflet-cluster";
 import { MapContainer, TileLayer } from "react-leaflet";
 
 import useHomes from "../hooks/useHomes";
+import { HomeMarker } from "./Home";
 
 import "./Map.css";
-import { HomeMarker } from "./Home";
 
 export default function Map() {
   const position = { lat: 53.55014, lng: -113.46871 };

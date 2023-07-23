@@ -1,3 +1,4 @@
+import "./Chat.css";
 import { useCallback, useState } from "react";
 import { SendRounded } from "@mui/icons-material";
 import {
@@ -9,8 +10,6 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import "./Chat.css";
-
 import { Configuration, OpenAIApi, ChatCompletionRequestMessage } from "openai";
 // const previousFilters = `
 // {   
