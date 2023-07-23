@@ -1,0 +1,35 @@
+.leaflet-popup-content-wrapper {
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+.leaflet-popup-content {
+  margin: 0;
+}
+
+.leaflet-popup-content p {
+  margin: 0;
+}
+
+b {}
+
+i {
+  font-style: normal;
+  color: #999;
+}
+
+.price {
+  font-size: 16px;
+}
+
+.beds {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+
+.baths {
+  display: flex;
+  align-items: center;
+}

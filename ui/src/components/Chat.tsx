@@ -9,13 +9,18 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import "./Chat.css";
 
 import { Configuration, OpenAIApi, ChatCompletionRequestMessage } from "openai";
 
-const config = new Configuration({ apiKey: import.meta.env.VITE_OPENAI_API_KEY });
+const config = new Configuration({
+  apiKey: import.meta.env.VITE_OPENAI_API_KEY,
+});
 const api = new OpenAIApi(config);
 
-function messagesToConversation(messages: Message[]): ChatCompletionRequestMessage[] {
+function messagesToConversation(
+  messages: Message[],
+): ChatCompletionRequestMessage[] {
   return messages.map((message) => ({
     role: message.author === "user" ? "user" : "system",
     content: message.body,
@@ -36,7 +41,7 @@ async function sendMessage(messages: Message[]): Promise<string> {
   const completion = await api.createChatCompletion({
     model: "gpt-3.5-turbo",
     messages: conversation,
-    max_tokens: 500,
+    max_tokens: 60
   });
 
   return completion.data.choices[0].message?.content as string;
@@ -56,7 +61,7 @@ function Message({ message }: MessageProps) {
   const colors =
     message.author === "user"
       ? { backgroundColor: "#2f9ff0", color: "#FFEEEE" }
-      : { backgroundColor: "#cccce0", color: "#220000" };
+      : { backgroundColor: "#ebebf7", color: "#220000" };
 
   const position =
     message.author === "user"
@@ -88,7 +93,29 @@ function Message({ message }: MessageProps) {
   );
 }
 
+function Typing() {
+  return (
+    <Box sx={{ display: "flex", justifyContent: "start", px: 2, py: 1 }}>
+      <Box
+        sx={{
+          backgroundColor: "#ebebf7",
+          color: "#220000",
+          p: 2,
+          borderRadius: 2,
+          maxWidth: "80%",
+          width: 28,
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <div class="dot-flashing" />
+      </Box>
+    </Box>
+  );
+}
+
 export default function Chat() {
+  const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState<Message[]>([
     {
@@ -105,8 +132,10 @@ export default function Chat() {
     ];
     setMessages(newMessages);
     setMessage("");
+    setLoading(true);
 
     const response = await sendMessage(newMessages);
+    setLoading(false);
     setMessages([
       ...newMessages,
       { id: newMessages.length, author: "assistant", body: response },
@@ -126,6 +155,8 @@ export default function Chat() {
           {messages.map((message) => (
             <Message key={message.id} message={message} />
           ))}
+
+          {loading && <Typing />}
         </Stack>
 
         <Box width="100%">
@@ -134,6 +165,7 @@ export default function Chat() {
             multiline
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            placeholder="Message"
             InputProps={{
               endAdornment: (
                 <InputAdornment position="end">
