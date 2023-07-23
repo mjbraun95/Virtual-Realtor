@@ -54,28 +54,44 @@ ${newMessage.body}
 We need to extract a set of filters to help narrow down their search. The filters have this format:
 
 {   
-  "transaction_type": "for_sale", 
-  "property_type": "any", 
-  "min_price": 250000, 
-  "max_price": 300000,
-  "min_bedrooms": 3,
-  "max_bedrooms": 3, 
+  "property_type": ["Single Family"], 
+  "min_price": 0, 
+  "max_price": 20000000,
+  "min_bedrooms": 1,
+  "max_bedrooms": 6, 
   "min_bathrooms": 1, 
-  "max_bathrooms": 1, 
-  "listed_since": "2023-1-1", 
-  "year_built": 2023, 
-  "open_houses_only": True, 
-  "live_streams_only": False, 
-  "keywords": ["golf course", "pond"], 
-  "building_type": "any", 
+  "max_bathrooms": 6, 
+  "keywords": ["Park", "Schools", "Airports", "Public Transit", "Shopping", "Playground", "Golf Course", "Ski hill"], 
+  "building_type": ["Manufactured Home", "House", "Fourplex", "Duplex", "Apartment", "Row / Townhouse"], 
   "min_storeys": 1, 
-  "max_storeys": 1,
-  "ownership": "timeshare/fractional", 
-  "min_land_size_in_acres": 0.5, 
-  "max_land_size_in_acres": 0.5
+  "max_storeys": 6,
+  "ownership": ["Freehold", "Condominium/Strata"], 
+  "min_land_size": 150,
+  "max_land_size": 1000000000,
 }
 
-Even if some of those details aren't explicitly filled, you still need to fill all of them. Use the placeholder "any"
+An example submission would be:
+
+{   
+  "property_type": ["Single Family"], 
+  "min_price": 100000, 
+  "max_price": 200000,
+  "min_bedrooms": 1,
+  "max_bedrooms": 3, 
+  "min_bathrooms": 1, 
+  "max_bathrooms": 2, 
+  "keywords": ["Park", "Schools", "Airports", "Public Transit", "Shopping", "Playground"], 
+  "building_type": ["Apartment", "Row / Townhouse"], 
+  "min_storeys": 1, 
+  "max_storeys": 2,
+  "ownership": ["Freehold"], 
+  "min_land_size": 750,
+  "max_land_size": 2000,
+}
+
+
+Even if some of those details aren't explicitly filled, you still need to fill all of them. Use the placeholder "any" by itself, not inside an array.
+If the user says they don't want any attributes, put null instead of "any".
 What are the filters of the homebuyers message? Only answer in JSON. Do not produce any extra text.
 
 
