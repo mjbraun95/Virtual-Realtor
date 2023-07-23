@@ -51,6 +51,11 @@ function HomeDetails({ home }: HomeProps) {
     return formatter.format(price);
   };
 
+  const fArea = (area: number): string => {
+    const formatted = Math.round(area * 10) / 10;
+    return formatted.toString() + " m²"
+  };
+
   return (
     <>
       <ImagePreview src={home.photo} />
@@ -59,13 +64,13 @@ function HomeDetails({ home }: HomeProps) {
           <b>{addrPrimary}</b><br />
           <i>{addrSecondary}</i><br />
           <InfoGutter>
-            <span className="price">{fMoney(parseFloat(home.price))}</span>
+            <span className="price">{fMoney(home.price)}</span>
 
             <div style={{ flex: 1 }} />
 
             <span className="area">
               <SquareFootRounded />
-              {home.size_interior}
+              {fArea(home.size_interior)}
             </span>
             <span className="beds">
               <BedRounded sx={{ mr: 1 }} />
@@ -83,7 +88,7 @@ function HomeDetails({ home }: HomeProps) {
 }
 
 function HomeMarker({ home }: HomeProps) {
-  const position = { lat: parseFloat(home.latitude), lng: parseFloat(home.longitude) };
+  const position = { lat: home.latitude, lng: home.longitude };
 
   if (!position.lat || !position.lng) {
     console.log(position, home)
@@ -91,7 +96,7 @@ function HomeMarker({ home }: HomeProps) {
   }
 
   return (
-    <Marker position={{ lat: parseFloat(home.latitude), lng: parseFloat(home.longitude) }}>
+    <Marker position={position}>
       <Popup>
         <HomeDetails home={home} />
       </Popup>

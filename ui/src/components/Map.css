@@ -26,13 +26,13 @@ i {
 .area {
   display: flex;
   align-items: center;
-  margin-right: 4px;
+  margin-right: 8px;
 }
 
 .beds {
   display: flex;
   align-items: center;
-  margin-right: 4px;
+  margin-right: 8px;
 }
 
 .baths {
