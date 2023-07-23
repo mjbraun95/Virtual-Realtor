@@ -9,10 +9,35 @@ import {
 import Chat from "../components/Chat";
 import Map from "../components/Map";
 import HomeList from "../components/Home";
-import useHomes from "../hooks/useHomes";
+import useHomes, { type HomesFilters } from "../hooks/useHomes";
+import { useEffect, useState } from "react";
+import Filters from "../components/Filters";
 
 export default function Home() {
-  const { homes, loading } = useHomes();
+  const [filters, setFilters] = useState<HomesFilters>({
+    property_type: null, // ["Single Family"],
+    max_price: null,
+    min_price: null,
+    min_bedrooms: null,
+    max_bedrooms: null,
+    min_bathrooms: null,
+    max_bathrooms: null,
+    min_storeys: null,
+    max_storeys: null,
+    min_land_size: null,
+    max_land_size: null,
+    building_type: null, //["House", "Duplex"],
+    ownership: null, // ["Freehold", "Condominium/Strata"]
+  });
+  const { homes, loading: homesLoading } = useHomes(filters);
+  void setFilters;
+
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    if (loading && !homesLoading) {
+      setLoading(false);
+    }
+  }, [loading, homesLoading])
 
   if (loading) {
     return (
@@ -45,9 +70,11 @@ export default function Home() {
         pt={1}
         overflow="none"
       >
-        <Chat />
+        <Chat setFilters={setFilters} />
 
-        <Stack direction="column" flex={2} height="95vh">
+        <Stack direction="column" flex={2} height="95vh" position="relative">
+          <Filters filters={filters} onUpdate={setFilters} />
+
           <Map homes={homes ?? []} />
           <HomeList homes={homes ?? []} />
         </Stack>

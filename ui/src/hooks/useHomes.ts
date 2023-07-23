@@ -25,11 +25,17 @@ export interface Home {
   ownership: string;
 }
 
-async function fetchAPI(route: string): Promise<object> {
+async function fetchAPI(
+  route: string,
+  method: "get" | "post",
+  body?: object,
+): Promise<object> {
   const res = await fetch(`http://localhost:8888${route}`, {
     headers: {
       "Content-Type": "application/JSON",
     },
+    method,
+    body: body && JSON.stringify(body),
   });
 
   if (res.status !== 200) {
@@ -39,7 +45,25 @@ async function fetchAPI(route: string): Promise<object> {
   return await res.json();
 }
 
-export default function useHomes() {
+export type PropertyType = "Single Family";
+export type BuildingType = "House" | "Duplex";
+export type OwnershipType = "Freehold" | "Condominium/Strata";
+export interface HomesFilters {
+  property_type: null | PropertyType[]; max_price: null | number;
+  min_price: null | number;
+  min_bedrooms: null | number;
+  max_bedrooms: null | number;
+  min_bathrooms: null | number;
+  max_bathrooms: null | number;
+  min_storeys: null | number;
+  max_storeys: null | number;
+  min_land_size: null | number;
+  max_land_size: null | number;
+  building_type: null | BuildingType[];
+  ownership: null | OwnershipType[];
+}
+
+export default function useHomes(filters: HomesFilters) {
   const [homes, setHomes] = useState<Home[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
@@ -50,9 +74,16 @@ export default function useHomes() {
       return;
     }
 
+    const filtersCleaned = {};
+    for (const [key, value] of Object.entries(filters)) {
+      if (value !== null) {
+        filtersCleaned[key] = value;
+      }
+    }
+
     setValid(true);
     setLoading(true);
-    fetchAPI("/homes/")
+    fetchAPI("/homes/", "post", filtersCleaned)
       .then((homes: object) => {
         setHomes(homes as Home[]);
         setError(null);
@@ -64,11 +95,13 @@ export default function useHomes() {
       .finally(() => {
         setLoading(false);
       });
-  }, [homes, error, loading, valid]);
+  }, [homes, error, loading, valid, filters]);
 
   const invalidate = useCallback(() => {
     setValid(false);
   }, []);
+
+  useEffect(invalidate, [filters, invalidate]);
 
   return useMemo(
     () => ({
