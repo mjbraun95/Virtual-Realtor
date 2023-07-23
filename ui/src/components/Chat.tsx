@@ -115,7 +115,7 @@ async function sendMessage(messages: Message[]): Promise<string> {
 
   const completion = await api.createChatCompletion({
     model: "gpt-4",
-    messages: [{ role: "user", content: assistant_prompt}, ...conversation],
+    messages: [{ role: "user", content: assistant_prompt }, ...conversation],
     max_tokens: 500,
   });
 
