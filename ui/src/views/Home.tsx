@@ -28,6 +28,7 @@ export default function Home() {
         width="100%"
         m={0}
         p={0}
+        pt={1}
         overflow="none"
       >
         <Chat />
