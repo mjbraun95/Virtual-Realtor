@@ -52,7 +52,7 @@ function Message({ message }: MessageProps) {
   const colors =
     message.author === "user"
       ? { backgroundColor: "#2f9ff0", color: "#FFEEEE" }
-      : { backgroundColor: "#cccce0", color: "#220000" };
+      : { backgroundColor: "#ebebf7", color: "#220000" };
 
   const position =
     message.author === "user"
@@ -89,7 +89,7 @@ function Typing() {
     <Box sx={{ display: "flex", justifyContent: "start", px: 2, py: 1 }}>
       <Box
         sx={{
-          backgroundColor: "#cccce0",
+          backgroundColor: "#ebebf7",
           color: "#220000",
           p: 2,
           borderRadius: 2,
