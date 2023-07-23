@@ -33,21 +33,45 @@ class Listing:
         self.full_address = listing['Property']['Address']['AddressText']
         self.latitude = listing['Property']['Address']['Latitude']
         self.longitude = listing['Property']['Address']['Longitude']
-        self.photo = listing.get('Photo', '')
         self.ownership_type = listing['Property'].get('OwnershipType', '')
         self.ammenities_nearby = listing['Property'].get('AmmenitiesNearBy', '')
         self.url = listing['RelativeDetailsURL']
         self.land_size = listing['Land'].get('SizeTotal', 0)
         self.stories = listing['Building']['StoriesTotal']
-        self.parking_type = listing.get('ParkingType', '')
+        self.parking_type = listing['Property'].get('ParkingType', '')
         self.ammenities = listing['Building'].get('Ammenities', '')
         self.postal_code = listing['PostalCode']
         self.province_name = listing['ProvinceName']
+        photo = listing['Property']['Photo']
+        if isinstance(photo, str):
+            self.photo = photo
+        else:
+            self.photo = photo[0].get('MedResPath', '')
 
     def generate_sql_insert(self):
-        return "INSERT INTO listings (uuid, bathrooms, bedrooms, size_interior, building_type, price, property_type, full_address, latitude, longitude, photo, ownership_type, ammenities_nearby, url, land_size, stories, parking_type, ammenities, postal_code, province_name) VALUES ('{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}');\n".format(
+        return """INSERT INTO listings (
+            uuid, 
+            bathrooms, 
+            bedrooms, 
+            size_interior, 
+            building_type, 
+            price, 
+            property_type, 
+            full_address, 
+            latitude, 
+            longitude, 
+            photo, 
+            ownership_type, 
+            ammenities_nearby, 
+            url, 
+            land_size, 
+            stories, 
+            parking_type, 
+            ammenities, 
+            postal_code, 
+            province_name
+        ) VALUES ('{}', {}, {}, '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}');\n""".format(
             self.uuid,
-            # self.r_id,
             self.bathrooms,
             self.bedrooms,
             self.size_interior,
