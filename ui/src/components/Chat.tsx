@@ -11,6 +11,7 @@ import {
   Typography,
 } from "@mui/material";
 import { Configuration, OpenAIApi, ChatCompletionRequestMessage } from "openai";
+import { HomesFilters } from "../hooks/useHomes";
 // const previousFilters = `
 // {
 //   "transaction_type": null,
@@ -46,7 +47,7 @@ The point is to ensure the observing GPT has all the information it needs.
 
 After clarifying message sent by the user, consider following up, and inform the user to check the map on the right.
 `
-const buildPrompt = (newMessage:Message) => `
+const buildPrompt = (newMessage: Message) => `
 We are analysing a conversation between a realtor and a home buyer. The home buyer sent the following message:
 
 ${newMessage.body}
@@ -95,24 +96,29 @@ function messagesToConversation(
   }));
 }
 
-async function sendMessage(messages: Message[]): Promise<string> {
-  const conversation = messagesToConversation(messages);
-
-  const displayMessage = messages[messages.length - 1]
-    ? `The user's new message is ${messages[messages.length - 1]}`
-    : "No new message";
-  const mySpecialContext = [
+async function getFilters(messages: Message[], conversation: ChatCompletionRequestMessage[]): Promise<HomesFilters> {
+  const mySpecialContext: ChatCompletionRequestMessage[] = [
     ...conversation,
-    { role: "user", content: buildPrompt(displayMessage) },
+    { role: "user", content: buildPrompt(messages[messages.length - 1]) },
   ];
-  console.log(mySpecialContext);
   const mySpecialCompletion = await api.createChatCompletion({
     model: "gpt-4",
     messages: mySpecialContext,
     max_tokens: 500,
   });
-  console.log(mySpecialCompletion);
 
+  const filters = JSON.parse(mySpecialCompletion.data.choices[0].message?.content ?? "{}");
+  const filtersCleaned = {} as Partial<HomesFilters>;
+  for (const [key, value] of Object.entries(filters)) {
+    if (value !== null && value !== "any") {
+      filtersCleaned[key] = value;
+    }
+  }
+
+  return filtersCleaned as HomesFilters;
+}
+
+async function getNextMessage(conversation: ChatCompletionRequestMessage[]): Promise<string> {
   const completion = await api.createChatCompletion({
     model: "gpt-4",
     messages: [{ role: "user", content: assistant_prompt }, ...conversation],
@@ -120,6 +126,22 @@ async function sendMessage(messages: Message[]): Promise<string> {
   });
 
   return completion.data.choices[0].message?.content as string;
+}
+
+async function sendMessage(messages: Message[], setMessages: (messages: Message[]) => void, setFilters: (filters: HomesFilters) => void) {
+  const conversation = messagesToConversation(messages);
+
+  const [filters, response] = await Promise.all([
+    getFilters(messages, conversation),
+    getNextMessage(conversation)
+  ]);
+
+  setFilters((prev: HomesFilters) => ({ ...prev, ...(filters as HomesFilters) }));
+  setMessages([
+    ...messages,
+    { id: messages.length, author: "assistant", body: response },
+  ]);
+
 }
 
 interface Message {
@@ -189,7 +211,11 @@ function Typing() {
   );
 }
 
-export default function Chat() {
+interface ChatProps {
+  setFilters: (filters: HomesFilters) => void,
+}
+
+export default function Chat({ setFilters }: ChatProps) {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState<Message[]>([
@@ -209,13 +235,9 @@ export default function Chat() {
     setMessage("");
     setLoading(true);
 
-    const response = await sendMessage(newMessages);
+    await sendMessage(newMessages, setMessages, setFilters);
     setLoading(false);
-    setMessages([
-      ...newMessages,
-      { id: newMessages.length, author: "assistant", body: response },
-    ]);
-  }, [message, messages]);
+  }, [message, messages, setFilters]);
 
   return (
     <Card sx={{ minWidth: 400, flex: 1, mr: 1, boxShadow: "none" }}>

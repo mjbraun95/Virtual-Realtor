@@ -49,19 +49,18 @@ export type PropertyType = "Single Family";
 export type BuildingType = "House" | "Duplex";
 export type OwnershipType = "Freehold" | "Condominium/Strata";
 export interface HomesFilters {
-  property_type: PropertyType[];
-  max_price: number;
-  min_price: number;
-  min_bedrooms: number;
-  max_bedrooms: number;
-  min_bathrooms: number;
-  max_bathrooms: number;
-  min_storeys: number;
-  max_storeys: number;
-  min_land_size: number;
-  max_land_size: number;
-  building_type: BuildingType[];
-  ownership: OwnershipType[];
+  property_type: null | PropertyType[]; max_price: null | number;
+  min_price: null | number;
+  min_bedrooms: null | number;
+  max_bedrooms: null | number;
+  min_bathrooms: null | number;
+  max_bathrooms: null | number;
+  min_storeys: null | number;
+  max_storeys: null | number;
+  min_land_size: null | number;
+  max_land_size: null | number;
+  building_type: null | BuildingType[];
+  ownership: null | OwnershipType[];
 }
 
 export default function useHomes(filters: HomesFilters) {
@@ -75,9 +74,16 @@ export default function useHomes(filters: HomesFilters) {
       return;
     }
 
+    const filtersCleaned = {};
+    for (const [key, value] of Object.entries(filters)) {
+      if (value !== null) {
+        filtersCleaned[key] = value;
+      }
+    }
+
     setValid(true);
     setLoading(true);
-    fetchAPI("/homes/", "post", filters)
+    fetchAPI("/homes/", "post", filtersCleaned)
       .then((homes: object) => {
         setHomes(homes as Home[]);
         setError(null);
@@ -94,6 +100,8 @@ export default function useHomes(filters: HomesFilters) {
   const invalidate = useCallback(() => {
     setValid(false);
   }, []);
+
+  useEffect(invalidate, [filters, invalidate]);
 
   return useMemo(
     () => ({

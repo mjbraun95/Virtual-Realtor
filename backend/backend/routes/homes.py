@@ -75,7 +75,7 @@ def get_filter_query(args):
 
     print(q, 'q list')
     query = ' '.join(q[:2])
-    if len(q) >= 2:
+    if len(q) > 2:
         query = query + ' and ' + ' and '.join(q[2:])
 
     if args.get('keywords', []):

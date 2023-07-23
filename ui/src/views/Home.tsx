@@ -10,7 +10,7 @@ import Chat from "../components/Chat";
 import Map from "../components/Map";
 import HomeList from "../components/Home";
 import useHomes, { type HomesFilters } from "../hooks/useHomes";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Filters from "../components/Filters";
 
 export default function Home() {
@@ -29,8 +29,15 @@ export default function Home() {
     building_type: null, //["House", "Duplex"],
     ownership: null, // ["Freehold", "Condominium/Strata"]
   });
-  const { homes, loading } = useHomes(filters);
+  const { homes, loading: homesLoading } = useHomes(filters);
   void setFilters;
+
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    if (loading && !homesLoading) {
+      setLoading(false);
+    }
+  }, [loading, homesLoading])
 
   if (loading) {
     return (
@@ -63,7 +70,7 @@ export default function Home() {
         pt={1}
         overflow="none"
       >
-        <Chat />
+        <Chat setFilters={setFilters} />
 
         <Stack direction="column" flex={2} height="95vh" position="relative">
           <Filters filters={filters} onUpdate={setFilters} />
