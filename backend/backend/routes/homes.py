@@ -12,11 +12,10 @@ class HomesHandler(tornado.web.RequestHandler):
 
         query = get_filter_query(args)
         rows = await conn.fetch(query)
+        print(len(rows), 'LEN')
         
-        dict_rows = list()
+        dict_rows = []
         for row in rows:
-            # print(row)
-            # print(type(row))
             dict_row = dict(row)
             dict_row["uuid"] = str(dict_row["uuid"])
             
@@ -32,42 +31,59 @@ def get_filter_query(args):
     if not args:
         return q[0]
     else:
-        print(q, 'where')
-        q[0] + ' WHERE'
+        q[0] = q[0] + ' WHERE'
+
+    if args.get('min_price'):
+        q.append("""price >= {}""".format(args.get('min_price', 0)))
+    if args.get('max_price'):
+        q.append("""price <= {}""".format(args.get('max_price', 100000000)))
+    if args.get('min_bedrooms'):
+        q.append("""bedrooms >= {}""".format(args.get('min_bedrooms', 0)))
+    if args.get('max_bedrooms'):
+        q.append("""bedrooms <= {}""".format(args.get('max_bedrooms', 100)))
+    if args.get('min_bathrooms'):
+        q.append("""bathrooms >= {}""".format(args.get('min_bathrooms', 0)))
+    if args.get('max_bathrooms'):
+        q.append("""bathrooms <= {}""".format(args.get('max_bathrooms', 100)))
+    if args.get('min_storeys'):
+        q.append("""stories >= {}""".format(args.get('min_storeys', 0)))
+    if args.get('max_storeys'):
+        q.append("""stories <= {}""".format(args.get('max_storeys', 100)))
+    if args.get('min_land_size'):
+        q.append("""land_size >= {}""".format(args.get('min_land_size', 0)))
+    if args.get('max_land_size'):
+        q.append("""land_size <= {}""".format(args.get('max_land_size', 100)))
 
     if args.get('property_type'):
-        q.append("""property_type in '{}'""".format(args.get('property_type')))
-    if args.get('min_price', 0):
-        q.append("""price < {}""".format(args.get('min_price', 0)))
-    if args.get('max_price', 100000000):
-        q.append("""price > {}""".format(args.get('max_price', 100000000)))
-    if args.get('min_bedrooms', 0):
-        q.append("""bedrooms < {}""".format(args.get('min_bedrooms', 0)))
-    if args.get('max_bedrooms', 100):
-        q.append("""bedrooms > {}""".format(args.get('max_bedrooms', 100)))
-    if args.get('min_bathrooms', 0):
-        q.append("""bathrooms < {}""".format(args.get('min_bathrooms', 0)))
-    if args.get('max_bathrooms', 100):
-        q.append("""bathrooms > {}""".format(args.get('max_bathrooms', 100)))
+        types = tuple(args.get('property_type'))
+        if len(types) == 1:
+            types = str(types).replace(',', '')
+        q.append("""property_type in {}""".format(types))
     if args.get('building_type'):
-        q.append("""building_type in '{}'""".format(args.get('building_type')))
-    if args.get('min_storeys', 0):
-        q.append("""stories < {}""".format(args.get('min_storeys', 0)))
-    if args.get('max_storeys', 100):
-        q.append("""stories > {}""".format(args.get('max_storeys', 100)))
+        types = tuple(args.get('building_type'))
+        if len(types) == 1:
+            types = str(types).replace(',', '')
+        q.append("""building_type in {}""".format(types))
     if args.get('ownership'):
-        q.append("""ownership == '{}'""".format(args.get('ownership')))
-    if args.get('min_land_size', 0):
-        q.append("""land_size < {}""".format(args.get('min_land_size', 0)))
-    if args.get('max_land_size', 100):
-        q.append("""land_size > {}""".format(args.get('max_land_size', 100)))
-    for keyword in args.get('keywords', []):
-        q.append("""ammenities like '%{}%'""".format(keyword))
-        q.append("""ammenities_nearby like '%{}%'""".format(keyword))
+        types = tuple(args.get('ownership'))
+        if len(types) == 1:
+            types = str(types).replace(',', '')
+        q.append("""ownership_type in {}""".format(types))
 
+    print(q, 'q list')
     query = ' '.join(q[:2])
-    if len(q) > 2:
-        query = query + ' or ' + ' or '.join(q[2:])
+    if len(q) >= 2:
+        query = query + ' and ' + ' and '.join(q[2:])
+
+    if args.get('keywords', []):
+        if len(q) >= 2:
+            query = query + ' and ('
+        keywords_q = []
+        for keyword in args.get('keywords', []):
+            print(keyword, 'KEYWORD')
+            keywords_q.append("""ammenities like '%{}%'""".format(keyword))
+            keywords_q.append("""ammenities_nearby like '%{}%'""".format(keyword))
+        query = query + ' or '.join(keywords_q) + ')'
 
     print(query)
     return query
