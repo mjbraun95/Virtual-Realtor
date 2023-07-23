@@ -23,9 +23,11 @@ class Listing:
         # self.r_id = listing['Id']
         # self.remarks = listing['PublicRemarks']
         self.bathrooms = listing['Building'].get('BathroomTotal', '')
-        self.bedrooms = listing['Building']['Bedrooms']
+        self.bedrooms = listing['Building'].get('Bedrooms', '')
+        # self.bedrooms = listing['Building']['Bedrooms']
         self.size_interior = listing['Building'].get('SizeInterior', '')
-        self.building_type = listing['Building']['Type']
+        self.building_type = listing['Building'].get('Type', '')
+        # self.building_type = listing['Building']['Type']
         self.price = listing['Property']['PriceUnformattedValue']
         self.property_type = listing['Property']['Type']
         self.full_address = listing['Property']['Address']['AddressText']
