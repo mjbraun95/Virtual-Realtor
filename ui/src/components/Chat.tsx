@@ -24,10 +24,19 @@ function messagesToConversation(messages: Message[]): ChatCompletionRequestMessa
 
 async function sendMessage(messages: Message[]): Promise<string> {
   const conversation = messagesToConversation(messages);
+  
+  const mySpecialContext = [{ role: "user", content: "...." }, ...conversation];
+  const mySpecialCompletion = await api.createChatCompletion({
+    model: "gpt-3.5-turbo",
+    messages: mySpecialContext,
+    max_tokens: 500,
+  });
+  console.log(mySpecialCompletion);
+
   const completion = await api.createChatCompletion({
     model: "gpt-3.5-turbo",
     messages: conversation,
-    max_tokens: 60
+    max_tokens: 500,
   });
 
   return completion.data.choices[0].message?.content as string;
