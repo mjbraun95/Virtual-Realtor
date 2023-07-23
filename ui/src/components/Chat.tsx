@@ -1,3 +1,4 @@
+import "./Chat.css";
 import { useCallback, useState } from "react";
 import { SendRounded } from "@mui/icons-material";
 import {
@@ -9,29 +10,27 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import "./Chat.css";
-
 import { Configuration, OpenAIApi, ChatCompletionRequestMessage } from "openai";
 // const previousFilters = `
-// {   
-//   "transaction_type": null, 
-//   "property_type": null, 
-//   "min_price": null, 
+// {
+//   "transaction_type": null,
+//   "property_type": null,
+//   "min_price": null,
 //   "max_price": null,
 //   "min_bedrooms": null,
-//   "max_bedrooms": null, 
-//   "min_bathrooms": null, 
-//   "max_bathrooms": null, 
-//   "listed_since": null, 
-//   "year_built": null, 
-//   "open_houses_only": null, 
-//   "live_streams_only": null, 
-//   "keywords": null, 
-//   "building_type": null, 
-//   "min_storeys": null, 
+//   "max_bedrooms": null,
+//   "min_bathrooms": null,
+//   "max_bathrooms": null,
+//   "listed_since": null,
+//   "year_built": null,
+//   "open_houses_only": null,
+//   "live_streams_only": null,
+//   "keywords": null,
+//   "building_type": null,
+//   "min_storeys": null,
 //   "max_storeys": null,
-//   "ownership": null, 
-//   "min_land_size_in_acres": null, 
+//   "ownership": null,
+//   "min_land_size_in_acres": null,
 //   "max_land_size_in_acres": null
 // }
 
@@ -83,10 +82,14 @@ What are the filters of the homebuyers message? Only answer in JSON. Do not prod
 
 `;
 
-const config = new Configuration({ apiKey: import.meta.env.VITE_OPENAI_API_KEY });
+const config = new Configuration({
+  apiKey: import.meta.env.VITE_OPENAI_API_KEY,
+});
 const api = new OpenAIApi(config);
 
-function messagesToConversation(messages: Message[]): ChatCompletionRequestMessage[] {
+function messagesToConversation(
+  messages: Message[],
+): ChatCompletionRequestMessage[] {
   return messages.map((message) => ({
     role: message.author === "user" ? "user" : "system",
     content: message.body,
@@ -95,9 +98,14 @@ function messagesToConversation(messages: Message[]): ChatCompletionRequestMessa
 
 async function sendMessage(messages: Message[]): Promise<string> {
   const conversation = messagesToConversation(messages);
-  
-  const displayMessage = messages[messages.length - 1] ? `The user's new message is ${messages[messages.length - 1]}` : 'No new message';
-  const mySpecialContext = [...conversation, { role: "user", content: buildPrompt(displayMessage)}];
+
+  const displayMessage = messages[messages.length - 1]
+    ? `The user's new message is ${messages[messages.length - 1]}`
+    : "No new message";
+  const mySpecialContext = [
+    ...conversation,
+    { role: "user", content: buildPrompt(displayMessage) },
+  ];
   console.log(mySpecialContext);
   const mySpecialCompletion = await api.createChatCompletion({
     model: "gpt-4",
