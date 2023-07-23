@@ -68,7 +68,7 @@ We need to extract a set of filters to help narrow down their search. The filter
   "max_storeys": 6,
   "ownership": ["Freehold", "Condominium/Strata"], 
   "min_land_size": 150,
-  "max_land_size": 1000000000,
+  "max_land_size": 1000000000
 }
 
 An example submission would be:
@@ -87,7 +87,7 @@ An example submission would be:
   "max_storeys": 2,
   "ownership": ["Freehold"], 
   "min_land_size": 750,
-  "max_land_size": 2000,
+  "max_land_size": 2000
 }
 
 
@@ -127,7 +127,11 @@ async function getFilters(messages: Message[], conversation: ChatCompletionReque
   const filtersCleaned = {} as Partial<HomesFilters>;
   for (const [key, value] of Object.entries(filters)) {
     if (value !== null && value !== "any") {
-      filtersCleaned[key] = value;
+      if (Array.isArray(value)) {
+        filtersCleaned[key] = value.filter((item) => item !== null && item !== "any");
+      } else {
+        filtersCleaned[key] = value;
+      }
     }
   }
 
@@ -221,7 +225,7 @@ function Typing() {
           justifyContent: "center",
         }}
       >
-        <div class="dot-flashing" />
+        <div className="dot-flashing" />
       </Box>
     </Box>
   );
