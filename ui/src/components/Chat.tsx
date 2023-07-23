@@ -242,7 +242,7 @@ export default function Chat({ setFilters }: ChatProps) {
     {
       id: 0,
       author: "assistant",
-      body: "Hello, I hear you are looking for a home in Edmonton! I will be your virtual realtor. What type of living space are you looking for today?",
+      body: "Hello, I hear you are looking for a home in Edmonton! My name is Rea, I will be your virtual realtor. What type of living space are you looking for today?",
     },
   ]);
 

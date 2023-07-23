@@ -30,7 +30,6 @@ export default function Home() {
     ownership: null, // ["Freehold", "Condominium/Strata"]
   });
   const { homes, loading: homesLoading } = useHomes(filters);
-  void setFilters;
 
   const [loading, setLoading] = useState(true);
   useEffect(() => {
