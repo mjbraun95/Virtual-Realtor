@@ -1,4 +1,4 @@
-import { Container, Stack } from "@mui/material";
+import { Box, CircularProgress, Container, Stack, Typography } from "@mui/material";
 
 import Chat from "../components/Chat";
 import Map from "../components/Map";
@@ -6,7 +6,18 @@ import HomeList from "../components/Home";
 import useHomes from "../hooks/useHomes";
 
 export default function Home() {
-  const { homes } = useHomes();
+  const { homes, loading } = useHomes();
+
+  if (loading) {
+    return (
+      <Box width="100vw" height="100vh" overflow="hidden" display="flex" alignItems="center" justifyContent="center" flexDirection="column">
+        <CircularProgress />
+        <Typography variant="body2" sx={{ mt: 2 }}>
+          Connecting you to the future of real estate...
+        </Typography>
+      </Box>
+    )
+  }
 
   return (
     <Container maxWidth="lg">
