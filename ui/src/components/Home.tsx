@@ -131,7 +131,7 @@ export default function HomeList({ homes }: HomeListProps) {
     >
       {homes.map((home) => (
         <Card key={home.uuid} sx={{ mr: 1, minWidth: 275 }} variant="outlined">
-          <CardActionArea onClick={() => console.log("TODO")}>
+          <CardActionArea onClick={() => window.open(`https://realtor.ca/${home.url}`)}>
             <HomeDetails home={home} />
             <Box height={9} />
           </CardActionArea>
