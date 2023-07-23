@@ -36,7 +36,7 @@ class Listing:
         self.url = listing['RelativeDetailsURL']
         self.land_size = listing['Land'].get('SizeTotal', 0)
         self.stories = listing['Building']['StoriesTotal']
-        self.parking_type = listing.get('ParkingType', '')
+        self.parking_type = listing['Property'].get('ParkingType', '')
         self.ammenities = listing['Building'].get('Ammenities', '')
         self.postal_code = listing['PostalCode']
         self.province_name = listing['ProvinceName']
@@ -44,7 +44,7 @@ class Listing:
         if isinstance(photo, str):
             self.photo = photo
         else:
-            photo[0].get('MedResPath', '')
+            self.photo = photo[0].get('MedResPath', '')
 
     def generate_sql_insert(self):
         return """INSERT INTO listings (
