@@ -113,7 +113,7 @@ export function HomeMarker({ home }: HomeProps) {
 }
 
 interface HomeListProps {
-  homes: Home[],
+  homes: Home[];
 }
 
 export default function HomeList({ homes }: HomeListProps) {

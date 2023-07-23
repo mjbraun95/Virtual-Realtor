@@ -1,4 +1,10 @@
-import { Box, CircularProgress, Container, Stack, Typography } from "@mui/material";
+import {
+  Box,
+  CircularProgress,
+  Container,
+  Stack,
+  Typography,
+} from "@mui/material";
 
 import Chat from "../components/Chat";
 import Map from "../components/Map";
@@ -10,13 +16,21 @@ export default function Home() {
 
   if (loading) {
     return (
-      <Box width="100vw" height="100vh" overflow="hidden" display="flex" alignItems="center" justifyContent="center" flexDirection="column">
+      <Box
+        width="100vw"
+        height="100vh"
+        overflow="hidden"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        flexDirection="column"
+      >
         <CircularProgress />
         <Typography variant="body2" sx={{ mt: 2 }}>
           Connecting you to the future of real estate...
         </Typography>
       </Box>
-    )
+    );
   }
 
   return (

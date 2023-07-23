@@ -12,7 +12,7 @@ import { HomeMarker } from "./Home";
 import "./Map.css";
 
 interface MapProps {
-  homes: Home[]
+  homes: Home[];
 }
 
 const Map = forwardRef<IMap, MapProps>(({ homes }, ref) => {
