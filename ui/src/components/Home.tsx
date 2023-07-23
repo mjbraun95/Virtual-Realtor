@@ -6,9 +6,13 @@ import { Marker, Popup } from "react-leaflet";
 import { type Home } from "../hooks/useHomes";
 
 import "./Map.css";
-import { BathtubRounded, BedRounded, SquareFootRounded } from "@mui/icons-material";
+import {
+  BathtubRounded,
+  BedRounded,
+  SquareFootRounded,
+} from "@mui/icons-material";
 
-const ImagePreview = styled('img')({
+const ImagePreview = styled("img")({
   width: "100%",
   backgroundSize: "cover",
   backgroundPosition: "center",
@@ -16,7 +20,7 @@ const ImagePreview = styled('img')({
   borderRadius: 4,
 });
 
-const PopupContents = styled('div')({
+const PopupContents = styled("div")({
   width: "100%",
   height: "100%",
 
@@ -27,7 +31,7 @@ const PopupContents = styled('div')({
   position: "relative",
 });
 
-const InfoGutter = styled('div')({
+const InfoGutter = styled("div")({
   display: "flex",
   width: "100%",
   paddingTop: 4,
@@ -38,12 +42,12 @@ interface HomeProps {
 }
 
 export function HomeDetails({ home }: HomeProps) {
-  const [addrPrimary, addrSecondary] = home.full_address.split('|');
+  const [addrPrimary, addrSecondary] = home.full_address.split("|");
 
   const fMoney = (price: number): string => {
-    const formatter = new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD',
+    const formatter = new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
       maximumFractionDigits: 0,
     });
 
@@ -52,7 +56,7 @@ export function HomeDetails({ home }: HomeProps) {
 
   const fArea = (area: number): string => {
     const formatted = Math.round(area * 10) / 10;
-    return formatted.toString() + " m²"
+    return formatted.toString() + " m²";
   };
 
   return (
@@ -60,8 +64,10 @@ export function HomeDetails({ home }: HomeProps) {
       <ImagePreview src={home.photo} />
       <PopupContents>
         <p style={{ padding: "6px 8px", minWidth: 250 }}>
-          <b>{addrPrimary}</b><br />
-          <i>{addrSecondary}</i><br />
+          <b>{addrPrimary}</b>
+          <br />
+          <i>{addrSecondary}</i>
+          <br />
           <InfoGutter>
             <span className="price">{fMoney(home.price)}</span>
 
@@ -90,7 +96,7 @@ export function HomeMarker({ home }: HomeProps) {
   const position = { lat: home.latitude, lng: home.longitude };
 
   if (!position.lat || !position.lng) {
-    console.log(position, home)
+    console.log(position, home);
     return null;
   }
 

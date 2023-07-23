@@ -1,35 +1,35 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 
 export interface Home {
-  full_address: string,
-  latitude: number,
-  longitude: number,
-  uuid: string,
-  size_interior: number,
-  stories: number,
-  building_type: string,
-  price: number,
-  parking_type: string,
-  ammenities: string,
-  photo: string,
-  ammenities_nearby: string,
-  ownership_type: string,
-  url: string,
-  land_size: string,
-  postal_code: string,
-  province_name: string,
-  bathrooms: string,
-  bedrooms: string,
-  remarks: string,
-  property_type: string,
-  ownership: string,
+  full_address: string;
+  latitude: number;
+  longitude: number;
+  uuid: string;
+  size_interior: number;
+  stories: number;
+  building_type: string;
+  price: number;
+  parking_type: string;
+  ammenities: string;
+  photo: string;
+  ammenities_nearby: string;
+  ownership_type: string;
+  url: string;
+  land_size: string;
+  postal_code: string;
+  province_name: string;
+  bathrooms: string;
+  bedrooms: string;
+  remarks: string;
+  property_type: string;
+  ownership: string;
 }
 
 async function fetchAPI(route: string): Promise<object> {
   const res = await fetch(`http://localhost:8888${route}`, {
     headers: {
       "Content-Type": "application/JSON",
-    }
+    },
   });
 
   if (res.status !== 200) {
@@ -59,7 +59,7 @@ export default function useHomes() {
       })
       .catch((error: Error) => {
         setError(error.message);
-        setHomes(null)
+        setHomes(null);
       })
       .finally(() => {
         setLoading(false);
@@ -70,11 +70,14 @@ export default function useHomes() {
     setValid(false);
   }, []);
 
-  return useMemo(() => ({
-    loading,
-    valid,
-    homes,
-    error,
-    invalidate,
-  }), [loading, valid, homes, error, invalidate]);
+  return useMemo(
+    () => ({
+      loading,
+      valid,
+      homes,
+      error,
+      invalidate,
+    }),
+    [loading, valid, homes, error, invalidate],
+  );
 }
