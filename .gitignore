@@ -3,3 +3,5 @@ api_key.txt
 __pycache__
 venv
 .env
+.history/
+.history
