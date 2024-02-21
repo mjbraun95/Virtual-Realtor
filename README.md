@@ -15,6 +15,7 @@ This directory contains the backend code for the Virtual-Realtor project, a real
 python3 -m venv venv
 ```
 2. **Activate the virtual environment:**
+
 On MacOS/Linux/*NIX:
 ```bash
 source ./venv/bin/activate
@@ -28,6 +29,7 @@ On Windows (Powershell):
 pip install -r requirements.txt
 ```
 4. **Running the Server**
+
 Execute the following command to start the backend server:
 ```bash
 python -m backend
